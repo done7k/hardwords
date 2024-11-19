@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hard Words</title>
+    <title>Заполните Пропущенные Слова</title>
     <!-- Material Design for Bootstrap CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Material Icons -->
@@ -13,8 +13,6 @@
             background-color: #121212;
             color: white;
         }
-
-
 
         nav .form-select {
             line-height: 1.5; 
@@ -124,50 +122,59 @@
 
 <body class="dark-theme">
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">Hard Words v4.3.1</a>
+        <!-- Toggler for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar Content -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto d-flex align-items-center">
+                <!-- Replace Type Dropdown -->
 
-                    <li class="nav-item me-3">
+                <li class="nav-item me-3">
+                    
+                    <select id="replaceType" class="form-select" title="Выберите режим замены слов">
+                        <option value="random">Случайные слова</option>
+                        <option value="everyNth">Каждое n-ое слово</option>
+                        <option value="fromList">Изучаемые слова</option>
+                    </select>
+                </li>
+                <!-- Missing Words Count -->
+                <li class="nav-item me-3">
+                    <input type="number" id="missingWordsCount" class="form-control" value="2" min="1" style="width:4em" title="кол. слов замены (зависит от режима)">
+                </li>
+                <!-- Generate Text Button -->
+                <li class="nav-item me-3">
+                    <button class="btn btn-success" onclick="generateText()">Генерация текста</button>
+                </li>
+                <!-- Theme Toggle Button -->
+                <li class="nav-item me-3">
+                    <button class="icon-button btn btn-primary d-flex align-items-center" onclick="toggleTheme()">
+                        <span class="material-icons">dark_mode</span>
+                    </button>
+                </li>
+                <!-- Font Size Adjuster -->
+<li class="nav-item d-inline" style="display: inline !important;">
+    <div style="display: flex; align-items: flex-end; gap: 0.05rem; border: 0.5px solid #f9f9f9; border-width: 0px 0px 2px 0px;">
+        <button id="decreaseFont" class="btn btn-dark" style="height: 1rem; padding: 0.0375rem; display: flex; align-items: flex-end;">
+            <span style="font-size: 120%; font-weight: bold; display: inline-block;">A</span>
+        </button>
+        <button id="increaseFont" class="btn btn-dark" style="height: 1rem; padding: 0.0375rem; display: flex; align-items: flex-end;">
+            <span style="font-size: 150%; font-weight: bold; display: inline-block;">A</span>
+        </button>
+    </div>
+</li>
 
-                        <select id="replaceType" class="form-select" title="Выберите режим замены слов">
-                            <option value="random">Случайные слова</option>
-                            <option value="everyNth">Каждое n-ое слово</option>
-                            <option value="fromList">Изучаемые слова</option>
-                        </select>
-                    </li>
-                    <!-- Missing Words Count -->
-                    <li class="nav-item me-3">
-                        <input type="number" id="missingWordsCount" class="form-control" value="2" min="1"
-                            style="width:4em" title="кол. слов замены (зависит от режима)">
-                    </li>
-                    <!-- Generate Text Button -->
-                    <li class="nav-item me-3">
-                        <button class="btn btn-success" onclick="generateText()">Генерация текста</button>
-                    </li>
-                    <!-- Theme Toggle Button -->
-                    <li class="nav-item me-3">
-                        <button class="icon-button btn btn-primary d-flex align-items-center" onclick="toggleTheme()">
-                            <span class="material-icons">dark_mode</span>
-                        </button>
-                    </li>
-                    <!-- Font Size Adjuster -->
-                    <li class="nav-item d-inline" style="display: inline !important;">
-                        <div
-                            style="display: flex; align-items: flex-end; gap: 0.05rem; border: 0.5px solid #f9f9f9; border-width: 0px 0px 2px 0px;">
-                            <button id="decreaseFont" class="btn btn-dark"
-                                style="height: 1rem; padding: 0.0375rem; display: flex; align-items: flex-end;">
-                                <span style="font-size: 120%; font-weight: bold; display: inline-block;">A</span>
-                            </button>
-                            <button id="increaseFont" class="btn btn-dark"
-                                style="height: 1rem; padding: 0.0375rem; display: flex; align-items: flex-end;">
-                                <span style="font-size: 150%; font-weight: bold; display: inline-block;">A</span>
-                            </button>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
+
 
 
     <!-- Main Content -->
@@ -186,7 +193,7 @@
 
             <div class=" mb-3">
                 <label for="excludedWordsList" class="form-label">Слова не подлежащие вводу (знакомые, простые):</label>
-                <input type="text" id="excludedWordsList" class="form-control light" value="A,a,Az,az,is,és,egy,Egy,csak,Magyar, magyar,Magyarország,Magyarországon,hogy,nem,sem,Sem,egy,vagy,pl,-" autocomplete="off">
+                <input type="text" id="excludedWordsList" class="form-control light" value="A,a,Az,az,is,és,Magyar, magyar,Magyarország,Magyarországon,hogy,nem,sem,Sem,egy,-" autocomplete="off">
             </div>
  
 
