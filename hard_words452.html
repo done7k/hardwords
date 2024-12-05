@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hard Words</title>
+    <!-- Material Design for Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" /> <!-- Material Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
+<!-- v4.5.2 = navbar fix,  -->
+
+
+    <style>
+        body.dark-theme {
+            background-color: #121212;
+            color: white;
+        }
+
+        nav .form-select {
+            line-height: 1.5;
+        }
+
+        nav .form-control {
+            line-height: 1.5;
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            /* Align to the top */
+            left: 0;
+            width: 100%;
+        }
+
+        .icon-button {
+            background: none;
+            border: none;
+            color: inherit;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 24px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon-button:hover {
+            color: #555;
+            /* Add a hover effect */
+        }
+
+        body.light-theme {
+            background-color: #ffffff;
+            color: black;
+        }
+
+        .form-control {
+            line-height: 1.2;
+            /*border-width: 0px 0px 1px 0px;*/
+        }
+
+        .form-control.dark {
+            background-color: #2e2e2e;
+            color: white;
+        }
+
+        .form-control.light {
+            background-color: #f5f5f5;
+            color: black;
+        }
+
+        .form-select.dark {
+            background-color: #2e2e2e;
+            color: white;
+        }
+
+        .form-select.light {
+            background-color: #f5f5f5;
+            color: black;
+        }
+
+        .form-label.dark {
+            color: #ffffffc2;
+            ;
+        }
+
+        .form-label.light {
+            color: #000000c2;
+            ;
+        }
+        .btn {
+            padding-left: 0.8em;
+            padding-right: 0.8em;
+        }
+        .button-menu {
+            margin-top: 0.6em;
+            width: 100%; 
+            text-align: left;
+        }
+
+        #displayText {
+            border: 0.5px solid #505050;
+            border-radius: 5px;
+            padding: 2em;
+            line-height: 1.6;
+        }
+
+        #displayText.dark input {
+            border: 0.5px solid #a0a0a0;
+            border-width: 0px 0px 1px 0px;
+            border-radius: 5px 5px 0px 0px;
+        }
+
+        #displayText.light input {
+            border: 0.5px solid #303030;
+            border-width: 0px 0px 1px 0px;
+            border-radius: 5px 5px 0px 0px;
+        }
+
+
+
+        #displayText.dark {
+            background-color: #1e1e1e;
+            color: white;
+        }
+
+        #displayText.light {
+            background-color: #f5f5f5;
+            color: black;
+        }
+
+        input.correct {
+            color: var(--mdb-green) !important;
+        }
+
+        input.incorrect {
+            color: var(--mdb-red) !important;
+        }
+        .match {
+            background-color: lightgreen; /* Совпадения */
+            color: black;
+        }
+        .difference {
+            background-color: lightcoral; /* Различия */
+            color: black;
+        }
+        .collapsable:after {  /* assigned to button element */
+            content: '\2212'; /* \2212 \02C4 \02795 Unicode character for "plus" sign (+) */
+            float: left;
+            margin-right: 5px;
+            font-size: 1.1em;
+        }
+        .collapseElement {  /* for textarea element */
+            height: 0 !important;
+            min-height: 0 !important;
+            overflow: hidden;
+            border: none;
+            padding: 0;
+            /* transition: all 1.2s ease-out; */
+        }
+        .activemenu:after {
+            
+            content: "\002B"; /* \2796 Unicode character for "minus" sign (-) */
+/*             float: right; */
+        }
+        textarea {
+            transition: max-height 0.2s ease-out;
+        }
+        #checkresult.checkresultplaceholder::before {
+            content: "Enter для проверки ввода, стрелки для изменения номера строки";
+            pointer-events: none;
+            opacity: 0.5;
+        }
+        #enteredtext {
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+        #textContainer {
+            width: 100%;
+            height: calc(100vh - 400px); /* 200px Высота окна вывода строк */
+            overflow-y: auto; /* Включаем прокрутку по вертикали */
+        }
+    </style>
+</head>
+
+
+
+
+<body class="dark-theme">
+
+
+    <!-- Navigation Bar == v4.5.1 -->
+<!--      
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            
+            <a class="navbar-brand" href="#">Hard Words v4.5.2</a>
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto d-flex align-items-center">
+                    
+
+                    <li class="nav-item me-3">
+
+                        <select id="replaceType" class="form-select" title="Выберите режим замены слов">
+                            <option value="random">Случайные слова</option>
+                            <option value="everyNth">Каждое n-ое слово</option>
+                            <option value="fromList">Изучаемые слова</option>
+                            <option value="enterText">Ввод текста</option>
+                        </select>
+                    </li>
+                    
+                    <li class="nav-item me-3">
+                        <input type="number" id="missingWordsCount" class="form-control" value="2" min="1"
+                            style="width:4em" title="кол. слов замены (зависит от режима)">
+                    </li>
+                    
+                    <li class="nav-item me-3">
+                        <button class="btn btn-success" onclick="generateText()">Генерация текста</button>
+                    </li>
+                    
+                    <li class="nav-item ">
+                        <button id="btnDark" class=" btn d-flex align-items-center " onclick="toggleTheme()">
+                            <span class="material-icons">dark_mode</span>
+                        </button>
+                    </li>
+                    
+                    <li class="nav-item d-inline" style="display: inline !important;">
+
+                    <div>
+                        <button id="decreaseFont" class="btn btn-dark" style="padding-right: 1px;">
+                            <span style="font-size: 150%; ">🗛</span>
+                        </button>
+                        <button id="increaseFont" class="btn btn-dark" style="padding-left: 1px;">
+                            <span style="font-size: 150%; ">🗚</span>
+                        </button>
+                    </div>
+                    </li>
+
+                    <li class="nav-item me-3">
+                        <button class="btn  d-flex align-items-center" onclick="toggleMenu(this)">
+                            <span class="material-icons">menu</span>
+                        </button>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+
+
+    
+
+<!-- Navbar v4.5.2 -->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark ">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+  
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="#">Brand</a>
+  
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars fa-lg"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <!-- Dropdown menu -->
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="#">Action</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Another action</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+  
+        </ul>
+  
+        <!-- Icons -->
+        <ul class="navbar-nav d-flex flex-row me-1">
+          <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+          <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+        </ul>
+  
+      </div>
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+
+
+
+    <!-- Main Content -->
+    <div class="container py-5">
+        <h1 class="text-center mb-4"></h1>
+
+
+        <div id="menuItems" class="collapseElement">
+        <div>
+            <!-- <label for="inputText" class="form-label">Введите изучаемый текст:</label> -->
+             <button type="button" class=" collapsable btn btn-dark activemenu button-menu" onclick="collapseItem(this)">Изучаемый текст</button>
+            <textarea id="inputText" class="form-control collapseElement" rows="4" oninput="checkInputAndUpdate()"></textarea>
+        </div>
+
+
+        <div>
+            <!-- <label for="excludedWordsList" class="form-label">Слова не подлежащие вводу (знакомые, простые):</label> -->
+            <button type="button" class="collapsable btn btn-dark activemenu button-menu" onclick="collapseItem(this)">Слова не подлежащие вводу (знакомые, простые)</button>
+            <input type="text" id="excludedWordsList" class="form-control collapseElement"
+                value="A,a,Az,az,is,és,Magyar, magyar,Magyarország,Magyarországon,hogy,nem,sem,Sem,egy,-"
+                autocomplete="off">
+        </div>
+
+
+        <div class="mb-3">
+            <!-- <label for="missingWordsList" class="form-label">Изучаемые слова для режима 'Из Списка Слов':</label> -->
+            <button type="button" class="collapsable btn btn-dark activemenu button-menu" onclick="collapseItem(this)">Изучаемые слова</button>
+            <input type="text" id="missingWordsList" class="form-control collapseElement" placeholder="например: слово1, слово2">
+        </div>
+        </div>
+
+        <!-- Display Area for Processed Text -->
+        <label for="displayText" class="form-label">Текст для работы со словами (нажмите "Генерация текста")</label>
+        <div id="displayText" class="dark">
+            <label class="form-label" style="font-style: italic;">
+                На этой странице вы можете потренировать ввод иностранных слов. Если слово введено неверно - оно
+                выделяется красным цветом. Для этого:<br><br>
+                1) Заполните поле 'Изучаемый текст'. <br> 2) выберете режим замены слов: <br> &nbsp;&nbsp;&nbsp;&nbsp; -
+                'Случайные слова' - уберать заданное кол. слов из каждого предложения случайным образом,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; - 'Каждое n-ое слово' - убрать каждое N-ое слово,<br> &nbsp;&nbsp;&nbsp;&nbsp;
+                - 'Изучаемые слова' - убрать только слова заданные в списке изучаемых слов.<br> 3) Затем нажмите
+                'Генерация текста'. <br><br> По необходимости добавте слова (через запятую) в поля выше.<br> Если ваш
+                текст содержит строку со списком слов вида ++[слово1, слово2, слово3] , то эти слова будут добавлены к
+                списку изучаемых слов автоматически.
+            </label>
+        </div>
+    </div>
+
+    <!-- dataset -->
+
+<!--     <script id="text_dataset" type="application/json">
+        {
+          "sentences_ds": [
+            {"id": -1, "osentence": "", "usentence": ""}
+          ]
+        }
+    </script>
+ -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
+    <script>
+
+        textds = [];
+        //toggleTheme();
+
+        function toggleMenu(e) {
+            if (e.classList.contains("active") ) {
+                e.classList.remove("active");
+                document.getElementById("menuItems").classList.add("collapseElement");
+            } else {
+                e.classList.add("active");
+                document.getElementById("menuItems").classList.remove("collapseElement");
+            }
+            
+        }
+
+        // Toggle theme between light and dark
+        function toggleTheme() {
+
+            document.body.classList.toggle('dark-theme');
+            document.body.classList.toggle('light-theme');
+
+            // Update input and displayText theme
+            const e = document.getElementById("btnDark");
+            const inputs = document.querySelectorAll('.form-control');
+            const labels = document.querySelectorAll('.form-label');
+            const buttonmenus = document.querySelectorAll('.button-menu');
+            const displayText = document.getElementById('displayText');
+            const isDark = document.body.classList.contains('dark-theme');
+            //console.log(`[toggeleTheme::] isDark:${isDark}`);
+            if (isDark) {
+                e.classList.add('active');
+            } else {
+                e.classList.remove('active');
+            }
+
+            inputs.forEach(input => {
+                input.classList.toggle('dark', isDark);
+                input.classList.toggle('light', !isDark);
+            });
+            labels.forEach(label => {
+                label.classList.toggle('dark', isDark);
+                label.classList.toggle('light', !isDark);
+            });
+            buttonmenus.forEach(bm => {
+                bm.classList.toggle('btn-dark', isDark);
+                bm.classList.toggle('btn-light', !isDark);
+            });
+
+
+            displayText.classList.toggle('dark', isDark);
+            displayText.classList.toggle('light', !isDark);
+
+            replaceType.classList.toggle('dark', isDark);
+            replaceType.classList.toggle('light', !isDark);
+        }
+
+        // Adjust font size for the entire page
+        function adjustFontSize(size) {
+            // document.body.style.fontSize = size + "px";
+            const displayTextElement = document.getElementById('displayText');
+            const inputElements = document.querySelectorAll('#displayText input');
+
+            displayTextElement.style.fontSize = size + "px";
+            inputElements.forEach(input => {
+                input.style.fontSize = size + "px"; // Example: set font size to 18px
+            });
+
+        }
+
+        //
+        function containsWord(missingWordsList, cleanedWord) {
+            return missingWordsList.some(word => cleanedWord.includes(word));
+        }
+
+        // Generate text with missing words
+        function generateText() {
+            const inputText = document.getElementById('inputText').value;
+            if (inputText !== "" && textds.length === 0) {
+                checkInputAndUpdate();
+            }
+
+            const replaceType = document.getElementById('replaceType').value;
+            const missingWordsCount = parseInt(document.getElementById('missingWordsCount').value);
+            const missingWordsList = document.getElementById('missingWordsList').value.split(',').map(word => word.trim());
+            const excludedWordsList = document.getElementById('excludedWordsList').value.split(',').map(word => word.trim());
+            let displayHTML = '';
+            const themecls = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
+            const sentences = [];
+            textds.forEach(sentence_element => { sentences.push(sentence_element.original); });
+
+            textds.forEach(dsrecord => {
+                let sentence = dsrecord.original;
+
+                if (replaceType === 'enterText') {
+                    displayHTML += `<span>[${dsrecord.id}] </span><span>${dsrecord.original} </span><br>`;
+                } else {
+
+                    const words = sentence.trim().split(/\s+/);
+                    let replacements = 0;
+
+                    words.forEach((word, index) => {
+                        const cleanedWord = word.replace(/[.,!?:;]/g, '');
+                        const isExcluded = excludedWordsList.includes(cleanedWord);
+
+                        let replaceWord = false;
+                        if (!isExcluded) {
+                            if (replaceType === 'random' && replacements < missingWordsCount && Math.random() < 0.3) {
+                                replaceWord = true;
+                            } else if (replaceType === 'everyNth' && (index + 1) % missingWordsCount === 0) {
+                                replaceWord = true;
+                            } else if (replaceType === 'fromList' && containsWord(missingWordsList, cleanedWord.toLowerCase())) {
+                                //missingWordsList.includes(cleanedWord)) {
+                                replaceWord = true;
+                            }
+                        }
+
+                        if (replaceWord) {
+                            const l = cleanedWord.length;
+                            //console.log(`[generateText::] l=${l} el=${Math.exp(l)}`);
+                            displayHTML += `<input type="text" data-answer="${cleanedWord}" title="${cleanedWord}" oninput="checkAnswer(this)" class="form-control d-inline-block ${themecls}" style="width:${l * 10 + 18}px; padding: 1px 5px 1px 5px;"> `;
+                            replacements++;
+                        } else {
+                            displayHTML += `<span>${word} </span>`;
+                        }
+                    });
+
+                    displayHTML += '<br>';
+
+                }
+                
+            });
+            //console.log("dataset >> ", textds.sentences_ds);
+
+            const displayText = document.getElementById('displayText');
+            if (replaceType === 'enterText') {
+                displayHTML = 
+                    `<div id="checkresult" class="checkresultplaceholder"></div>` +
+                    `<input type="text" id="enteredtext" class="form-control d-inline-block ${themecls}" style="width: 100%" value="[0] "></input>` + //oninput="compareStrings(this)"></input>` +
+                    `<div id="textContainer">` +
+                        displayHTML +
+                    `</div>`;
+                displayText.innerHTML = displayHTML;
+                document.getElementById('enteredtext').addEventListener('keydown', function(event) {
+                    function scrollElement(lineNumber, e) {
+                        const targetLine = e.querySelectorAll('span')[lineNumber];
+                        if (targetLine) {
+                            const offset = targetLine.offsetTop - e.clientHeight - targetLine.clientHeight;
+                            e.scrollTo({ top: offset, behavior: "smooth" });
+                        }
+                    }
+                    if (event.key === 'Enter') {
+                        this.previousElementSibling.classList.remove("checkresultplaceholder");
+                        compareStrings(this.value);
+                    } else if (event.key === 'ArrowUp') {
+                        this.value = `[${Math.max(0, parseInt(this.value.match(/\d+/)?.[0] || 0) - 1)}] `;
+                        this.previousElementSibling.textContent = "";
+                        this.previousElementSibling.classList.add("checkresultplaceholder");
+                        scrollElement(this.value.match(/\d+/)?.[0], this.nextElementSibling);
+                    } else if (event.key === 'ArrowDown') {
+                        this.value = `[${Math.max(0, parseInt(this.value.match(/\d+/)?.[0] || 0) + 1)}] `;
+                        this.previousElementSibling.textContent = "";
+                        this.previousElementSibling.classList.add("checkresultplaceholder");
+                        scrollElement(this.value.match(/\d+/)?.[0], this.nextElementSibling);
+                    }
+                });
+
+            } else {
+                displayText.innerHTML = displayHTML;    
+            }
+        }
+
+        // Check if the input matches the correct answer
+        function checkAnswer(input) {
+            if (input.value.toLowerCase() === input.getAttribute('data-answer').toLowerCase()) {
+                input.classList.add('correct');
+                input.classList.remove('incorrect');
+            } else {
+                input.classList.add('incorrect');
+                input.classList.remove('correct');
+            }
+        }
+
+        function checkInputAndUpdate() {
+            const inputField = document.getElementById('inputText');
+            const missingWordsList = document.getElementById('missingWordsList');
+            const inputValue = inputField.value.trim();
+            const sentences = inputValue.match(/[^.!?\r\n]+[.!?]|\r?\n/g);//.map(sentence => sentence.trim());
+            //console.log("[checkandupdate] sentences >> ", sentences);
+
+            // Parse text, upload to array
+            //const inputText = inputField.value;
+            //const sentences = inputText.match(/[^.!?\r\n]+[.!?]|\r?\n/g).map(sentence => sentence.trim());
+            let isent = 0;
+            textds = [];
+            sentences.forEach(sentence => {
+                if (sentence !== "") {
+                    textds.push({ id: isent, original: sentence, user_input: "", score: 0});
+                    isent++;
+                }
+            });
+            console.log("[checkandupdate] textds >> ", textds);
+
+            // lookup for list fo words in the end of file. the line with format ++[word1, word2,..]
+            //const regex = /\+\+\[(.*?)\]/;
+            const match = inputValue.match(/\+\+\[(.*?)\]/);
+            if (match) {
+                const words = match[1].split(',').map(word => word.trim()).filter(Boolean); 
+
+                const missingWords = missingWordsList.value.split(',').map(word => word.trim()).filter(Boolean);
+                words.forEach(word => {
+                    if (!missingWords.includes(word)) {
+                        missingWords.push(word);
+                    }
+                });
+
+                missingWordsList.value = missingWords.join(', ');
+            }
+        }
+
+        function longestCommonSubsequence(a, b) {
+            const dp = Array(a.length + 1).fill(null).map(() => Array(b.length + 1).fill(''));
+
+            for (let i = 1; i <= a.length; i++) {
+                for (let j = 1; j <= b.length; j++) {
+                    if (a[i - 1] === b[j - 1]) {
+                        dp[i][j] = dp[i - 1][j - 1] + a[i - 1];
+                    } else {
+                        dp[i][j] = dp[i - 1][j].length > dp[i][j - 1].length ? dp[i - 1][j] : dp[i][j - 1];
+                    }
+                }
+            }
+            return dp[a.length][b.length];
+        }
+
+        function compareStrings(input) {
+            let string1 = "";
+            let string2 = "";
+            const input_parsed = input.match(/^\[(\d+)]\s*(.*)$/);
+            if (input_parsed) {
+                string2 = input_parsed[2];
+                string1 = textds[input_parsed[1]].original; 
+            } 
+            const lcs = longestCommonSubsequence(string1, string2);
+
+            let resultHTML = '';
+            let i = 0, j = 0;
+
+            for (const char of lcs) {
+                // Добавляем различия перед совпадающим символом
+                while (i < string1.length && string1[i] !== char) {
+                    resultHTML += `<span class="difference">${string1[i]}</span>`;
+                    i++;
+                }
+                while (j < string2.length && string2[j] !== char) {
+                    resultHTML += `<span class="difference">${string2[j]}</span>`;
+                    j++;
+                }
+                // Добавляем совпадающий символ
+                resultHTML += `<span class="match">${char}</span>`;
+                i++;
+                j++;
+            }
+
+            // Добавляем оставшиеся различия
+            while (i < string1.length) {
+                resultHTML += `<span class="difference">${string1[i]}</span>`;
+                i++;
+            }
+            while (j < string2.length) {
+                resultHTML += `<span class="difference">${string2[j]}</span>`;
+                j++;
+            }
+
+            document.getElementById("checkresult").innerHTML = resultHTML;
+        }
+
+        //document.getElementById('enteredtext').addEventListener('keydown', function(event) {
+        //    if (event.key === 'Enter') {
+        //        compareStrings(document.getElementById('enteredtext').value);
+        //    }
+        //});
+
+        function collapseItem(ce) {  //collapsable element
+            ce.classList.toggle("activemenu");
+            var content = ce.nextElementSibling;
+            content.classList.toggle("collapseElement");
+         }
+
+        document.getElementById('decreaseFont').addEventListener('click', function () {
+
+            const displayTextElement = document.getElementById('displayText');
+            let currentSize = parseInt(window.getComputedStyle(displayTextElement).fontSize);
+            const inputElements = document.querySelectorAll('#displayText input');
+
+            displayTextElement.style.fontSize = (currentSize - 2) + 'px';
+            inputElements.forEach(input => {
+                input.style.fontSize = (currentSize - 2) + 'px';
+            });
+        });
+
+        document.getElementById('increaseFont').addEventListener('click', function () {
+
+            const displayTextElement = document.getElementById('displayText');
+            let currentSize = parseInt(window.getComputedStyle(displayTextElement).fontSize);
+            const inputElements = document.querySelectorAll('#displayText input');
+
+            displayTextElement.style.fontSize = (currentSize + 2) + 'px';
+            inputElements.forEach(input => {
+                input.style.fontSize = (currentSize + 2) + 'px';
+            });
+
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+
+            document.body.classList.add('dark-theme');
+            document.body.classList.remove('light-theme');
+            replaceType.classList.add('dark');
+            replaceType.classList.remove('light');
+
+            const inputs = document.querySelectorAll('.form-control');
+            inputs.forEach(input => {
+                input.classList.add('dark');
+                input.classList.remove('light');
+            });
+            const labels = document.querySelectorAll('.form-label');
+            labels.forEach(label => {
+                label.classList.add('dark');
+                label.classList.remove('light');
+            });
+            //console.log("!!! dark should be set");
+        });
+    </script>
+</body>
+
+</html>
