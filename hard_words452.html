@@ -720,7 +720,7 @@
 
         document.getElementById("replaceType").addEventListener('change', function () {
             document.getElementById("missingWordsCount")
-                .style.display = (this.value === 'everyNth') ? 'block' : 'none' ;
+                .style.display = (this.value === 'everyNth' || this.value === 'random')? 'block' : 'none' ;
         });
 
         document.addEventListener('DOMContentLoaded', () => {
