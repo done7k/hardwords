@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Anki Cards (Sorted Final)</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #1e1e1e;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-size: 120%;
+        }
+        #title_button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            font-size: 130%;
+            color: #a0a0a0; /* темнее на 15% */
+            background-color: #0b2130;
+        }
+        #expand_sum {
+            cursor: pointer;
+            background-color: #333;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        #sum {
+            display: none;
+            margin-top: 10px;
+        }
+        #card {
+            
+            color: azure;
+            
+        }
+    </style>
+</head>
+<body>
+    <ul>
+
+        <li>
+            <div id="title_button">
+                <div id="title">1A - Ismertesse, milyen kiemelkedően fontos nemzetközi szervezeteknek tagja Magyarország</div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">Egyesült Nemzetek Szervezete / Európa Tanács / NATO / Európai Unió<br><br>=ENSZ az Egyesült Nemzetek Szervezete / (ЧиП в ПюПитер БуБлике) (1945 – 1955) 51 állam / NY, minden / Nemzetközi béke és biztonság fenntartása, emberi jogok védelme<br><br>=Európa Tanács / (ЧеРеп РюМка) (1949 – 1990) 10 (огонь) nyugat-európai állam / Strasbourg / Közös európai értékek védelme, Emberi Jogok Európai Egyezményének előkészítése, emberi jogok bíróság működtetése <br><br>=NATO / (ЧеРеп-аРФа) (1949 – 1998) / politikai és katonai szövetség,  Tagállamok közös védelme<br><br>=Európai Unió / (БуСы - Чай ) 1957, 6 állam (Benelux, Franciaország, Olaszország, Németország) – 2004 ) / Közös biztonsági és védelmi politika, gazdasági együttműködés, közös pénz bevezetése<br></div>
+            <div id="card">"Az ENSZ az Egyesült Nemzetek Szervezete. Az ENSZ-et 1945 október 24-én hozta létre 51 állam. Székhelye New Yorkban van, de a szervezetei az egész világon működnek. A legfontosabb céljai közül a nemzetközi béke és biztonság fenntartása és emberi jogok védelme. Magyarország 1955-ben lépett be az ENSZ-be.<br><br>Az Európa Tanácsot 10 nyugat-európai állam hozta létre 1949-ben. A legfontosabb célja a közös európai értékek védelme. Az egyik első tevékénysége volt az Emberi Jogok Európai Egyezménye előkészítése (Például, az Európa Tanács előkészítette az Emberi Jogok Európai Egyezményét). Az Európa Tanács hozta létre az Emberi Jogok Európai Bíróságot, amely Strausbourgban működik. Magyarország 1990 óta tagja az Európa Tanácsnak.<br><br>A második világháború után 1957-ben 6 alapító állam (a Benelux országai, Franciaország, Olaszország és Németország) az Európai Gazdasági Közösséget hozta létre. A következő lépésként 1993-ban létrehozták az Európai Uniót. A tagállamoknak közös biztonsági és védelmi politikájuk van. Gazdasági életben szorosan együttműködnek és közös pénzt vezettek be. Magyarország 2004 május 1-jén lett az EU tagja. Jelenleg az Uniónak 27 tagállama van.<br><br>A NATO politikai, katonai nemzetközi szervezet, amely 1949-ben jött létre. Feladata a tagországok közös védelme. Magyarország 1998-tól tagja a NATO-nak<br>"</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">1B - Mutassa be Magyarország Alaptörvényét és az abban megfogalmazott alkotmányos elveket</div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">"=legfontosabb, törvény<br><br>=1949 - 1989 - 2011apr/2012 (череп-фара-гагарин*гитара)<br><br>=alkotmányos állam /tartalmazza alapelveket<br><br>= E (nÉp) – L (hataLommégosztás) – V (törVény uralma) – E (Emberi jogok) – K (egyenjogúaK [tiltott diszkiminacio FaNVaN])<br>= nép - hatalommegosztás - tötvény uralma - emberi jogok - egyenloguak.diszktiminacio<br><br>(4угла страницы = народ-хата-источник = хата на 3 части = части закон (стопка) под хату = защищает права ч = народ выстраивают в ряд перед законом)"</div>
+            <div id="card">"Az Alaptörvény azért különleges, mert ez a legfontosabb törvény. <br><br>Az első alkotmányt 1949-ben fogadta el és 1989-ben módosította az Országgyűlés. Az Országgyűlés 2011 aprilisában új alkotmányt fogadott el, amelynek a neve Magyarország Alaptörvénye. 2012-ben lépett életbe.<br><br>Magyarország - az alkotmányos állam. Ez azt jelenti, hogy az Alaptörvény tartalmazza az alkotmányos alapelveket és ezek szerint működik az állam.<br><br>Ezek az alapelvek a következők:<br>- minden hatalom forrása a nép. Ez azt jelenti, hogy a nép részt vesz a döntésekben.<br>- a hatalommegosztás elve, amely szerint az Országgyűlés, a kormány és a bíróságok függetlenül működnek egymástól.<br>- a törvények uralma, amely azt jelenti, hogy a törvényeket mindenkinek be kell tartania.<br>- az állam biztosítja az emberi jogokat.<br>- az állampolgárok a törvény előtt egyenjogúak, tiltott a faji, nemi, vallási vagy nemzetiségi diszkrimináció."</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">2A  - Mutassa be az Európai Unió céljait és főbb intézményeit</div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">"= Н ДеД = в глазах 2 цели = 1 – (щит) közös európai érdekek védelme 2 – (заводы) gazdaság fejlődése<br><br>=(звезда) Танк – Танки – Круг – комисары - Судьи<br><br>=Tanács – Stratégiai kérdésekben dönt – miniszterelnökei - Félévente, <br><br>=Tanácsa – döntéshozó – miniszterei -Parlamenttel – törvényhozó  <br><br>=Parlament – alkotja – HU 21 képviselője, <br><br>=Bizottság – eu kormánya – 28 – bizto - szakterületért felelős, <br><br>=Bíróság – ítéleteket - törvények megszegéséről - értelmezni"</div>
+            <div id="card">"Az Európai Unió céljai közül a közös európai érdekek védelme és gazdaság fejlődése.<br><br>Az Európai Unió legfontosabb intézményei: az Európai Tanács, az Európai Unió Tanácsa, az Európai Bizottság, az Európai Parlament, az Európai Bíróság.<br><br>Az Európai Tanács az Európai Unió legfelsőbb szerve. Stratégiai kérdésekben dönt. Az Európai Tanács tagjai a tagállamok elnökei vagy miniszterelnökei, vagyis az államok fővezetői. Félévente váltják egymást.<br><br>Az Európai Unió Tanácsa az EU legfontosabb döntéshozó szerve. Az Európai Unió Tanácsa tagjai a tagállamok miniszterei. Az Európai Parlamenttel együtt az EU törvényhozó szerve. A székhelye Brüsszel és Luxemburg.<br><br>Az Európai Parlament az EU törvényeket alkotja. A képviselőit a tagállamok polgárai választják meg. Magyarországnak 21 képviselője van. <br><br>Az Európai Bizottság az EU kormánya. 27 tagból áll.&nbsp; 27 tag a tagállamok jelöltjei és 28. tag az EU bizottság elnöke. Minden biztos egy-egy szakterületért felelős<br><br>Az Európai Bíróság dönt az EU-jogsértésekkel kapcsolatos ügyekben. Ezenkívül segíti értelmezni az EU törvényeit."</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">2B - A magyar választási rendszer (képviseleti demokrácia, a választások lebonyolítása)</div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">ДюБель = две урны(парламени и онкорман) – на 1й коза, на 2й – короба.<br><br>=parlamentáris demokrácia – négy – általános – vegyes (közvetlenül, pártok) - megszűnik <br><br>=önkormányzati – (képviselők, polgármesterek) - ötödik év októberében <br><br>=Közvetlen - csak személyesen) <br><br>=Titkos - szavazófülkében <br><br>=neve – névjegyzékben szerepel – névjegyzéket település jegyzője készíti<br><br>= Fidesz (fiatal demo) 67% / koalició (marki-zay péter) 28% / miHazunk (3%) / nemet onkormanyzat (0.5%)<br></div>
+            <div id="card">"Képviseleti demokrácia:<br><br>-Magyarországon parlamentáris demokrácia működik, négy évenként általános választások vannak, amikor a lakosság megválasztja az országgyűlési képviselőket.<br><br>-Magyarországon vegyes választási rendszer van. A választópolgárok a képviselők egy részét közvetlenül választják, másik részük a pártok országos listáiról kerül be az országgyűlés tagjai sorába.<br><br>- Ha az egyéni választó kerületben megválasztott képviselő megbiztatása a négy éves ciklus alatt megszűnik, tehát a képviselőhely megüresedik, időközi választást kell tartani. Amennyiben egy országos listáról bekerült képviselő mandátuma üresedik meg, a képviselő helyett az országos listán eredetileg így szereplő, következő jelölttel kell betölteni.<br><br>- A helyi önkormányzati választásokon szavaznak a választópolgárok a helyi közhatalom képviselőinek megválasztásáról. Az önkormányzati képviselők és polgármesterek választását minden ötödik év októberében kell megtartani.<br><br>A választások lebonyolítása:<br><br>- Magyarországon a választás általános és egyenlő választó jog alapján történik, a szavazás közvetlen és titkos.<br>-- Közvetlen: mindenki csak személyesen vehet részt a szavazásban, senki nem küldhet maga helyett másik embert, hogy szavazatát leadja.<br>-- Titkos: mindenki a saját meggyőződése szerint szavazhat, a szavazófülkében egyszerre egy embert tartózkodhat.<br><br>(Csak az szavazhat, akinek a neve a választói névjegyzékben szerepel. A névjegyzéket a település jegyzője készíti.<br>"</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">3A - Ismertesse Magyarország földrajzi elhelyezkedését, államformáját, pénznemét és területi tagozódását! <br></div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">földrajzi elhelyezkedését: лежит бассейне = 93030(РуКами Новую КаНаву копать) = 3 части = соседи = 10 лимонов<br>területi tagozódását: 19(оГоРоды и Будапешт) = 198 ГРаФство&nbsp; яраш = 3154 КГПЧ (КоЖу в ПеЧь) в ТЕЛЕках КоГоть в ПеЧать<br><br>Magyarország államformája – Köztársaság.Forint<br></div>
+            <div id="card">"Magyarország Kelet-Közép-Európában, a Kárpát-medencében fekszik.<br>Az ország területe 93.030 négyzetkilométer.<br>3 nagy földrajzi része van (főbb tájegységei): Dunántúl, Észak-Magyarország és az Alföld<br><br>Szomszédos országok (7): Ausztria, Szlovákia, Ukrajna, Románia, Szerbia, Horvátország, Szlovénia.<br><br>Magyarország lakossága közel 10 millió. Sok nemzetiség lakik itt: magyarok, bolgárok, szerbek, németek, cigányok, ukránok, ruszinok, szlovákok, stb.<br><br>Magyarország államformája – Köztársaság.<br>A pénzneme Forint<br>Közigazgatási beosztás: Magyarországon 19 megye és főváros van. 19 megyében 198 járás es 3154 település van.<br>Magyarország fővárosa Budapest, amely 23 kerületre tagozódik. <br><br>"</div>
+        </li>
+    
+
+        33B      <li>
+            <div id="title_button">
+                <div id="title">3B - Az országos, területi és a helyi szintű népszavazás<br></div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">Никелированный КаБлук с наколотыми-прилипшими листами референдума<br><br>
+
+                = közvetlenül (köz-vet сразу в центр шВЫРнуть) demokrácia, barmilyen kerdeseket<br>
+                = На листе ВОПРОС, зачеркнуты деньги и лицо<br>
+                = метро остановки ivek > benyújtják OGnek<br>
+                = парламент = <200 >200 >50<br>
+                = NATO/EU<br>
+                = местный по объеденению<br><br>
+                
+                népi kezdeményezes ez, hogy a OGy nézi ki a keredest<br></div>
+            <div id="card">Az Alaptörvény szerint MOn közvetlen demokrácia van. Ez azt jelenti, hogy állampolgárok közvetlenül reszt vesznek a közügyekben, nyilvánítanak a véleményt különböző fontos kérdéseket az országos, területi vagy hely színtű. Aztán más állampolgárok választják amely döntős lehetne egy népszavazáson.
+
+                Majdnem bármilyen kérdéseket lehet nyilvánítani, amelyiket Országgyűlés vagy önkormányzat tud dönteni. 
+                Nem lehet népszavazást tartani ezekben az ügyekben: <br>
+                
+                - **Alaptörvény módosítása** (alkotmány változtatása)  <br>
+                - **Pénzügyek** (költségvetés, adók, vámok, járulékok)  <br>
+                - **Nemzetközi szerződésekből adódó kötelezettségek**  <br>
+                - **Választási törvények** (országgyűlési, önkormányzati, EP-képviselők választása)  <br>
+                - **Országgyűlés szervezetével és működésével kapcsolatos döntések**  <br>
+                - **Országgyűlés feloszlatása**  <br>
+                - **Hadiállapot, rendkívüli állapot kihirdetése**  <br>
+                - **Katonai műveletekben való részvétel**  <br>
+                - **Önkormányzati testületek feloszlatása**  <br>
+                - **Közkegyelem gyakorlása** (például elítéltek kegyelme)<br><br>
+                
+                Az országos népszavazás kezdődik az aláírásgyűjtéstől, ahol a szervezőik kérnek polgaroknak, hogy aláírjuk az íveket. Az íveket Az Országgyűléshez benyújtják.<br>
+                
+                !!! > 200 000 - népszavazás<br>
+                !!! 100 000 – 200 000 – tárgyalás hogy leget népszavazás<br>
+                !!! < 50 000 – 100 000 – OGy tárgyja meg a kérdését<br><br>
+                
+                Ha legalább 200000 választópolgár aláirt egy ívet, azért OGy elrendel a népszavazás megtartását. A köztársasági elnök is tud kezdeményezik egy népszavazást. A tarsasági elnök tűzi ki. Választópolgárok töltök ki szavazólapokat. Szavazás eredménye kötelező az OGy-nak.<br>
+                
+                A helyi népszavazás tártak valamilyen településen (város, fővárosi kerületben vagy községben). A népszavazás rendszere ugyanaz az ország szintű esemény. Van olyan esetek amikor helyi NSZ kötelezo tartani, pl. Két község egyénítés.<br>
+                
+                
+                <br>"</div>
+        </li>
+
+
+
+
+
+
+
+
+
+        <li>
+            <div id="title_button">
+                <div id="title">4A - Ismertesse Magyarország nemzeti jelképeit, nemzeti szimbólumait és ünnepeit!</div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">"Новое ЧуДовище на 3х мешках = рупор (гимн) Колючий Фрак и Балконный Фрак / флаг / щит = поют на празники / флаг логок / щит на купюрах = календарь = корона йогар яблоко меч плащa Szent Korona, a királyi jogár, az országalma, a koronazási kard, a koronazási palast, Országház<br><br>"</div>
+            <div id="card">"Nemzet jelképei az állam függetlenségét fejezik ki.<br>A Magyarország jelképei-a himnusz,-a zászló és-a címér.<br>Magyarország himnusza-Kölcsey Ferenc költeménye-Erkel Ferenc zenejével.<br>(Három egyforma színű csík) Magyarország zászlója három, ugyan olyan széles, felülről piros, fehér és zöld sávból áll. A piros szín az erőt, a fehér szín a hűséget, a zöld szín a reményt jelenti.<br>Magyarország címére a pajzs.-Első mezeje vörössel és ezüsttel hétszer vágott.-Második , vörös mezejében zöld halmon arany korona van és rajta áll az ezüst kereszt.=A pajzson a magyar Szent Korona nyugszik.<br>Nemzeti jelképek jelen vannak a mindennapi életben. A középületeken a magyar zászló lobog. A bankjegyeken megtalálható a címér. Az ünnepeken hangzik a Himnusz.&nbsp;&nbsp;<br>A nemzeti és állami ünnepek következők:-Március 15-e, az 1848-1849 forradalom kezdete és a modern Parlamentnek születés napja.-Augusztus 20-a, az államalapítás és Szent Istvan Király ünnepe.-Október 23-a, az 1956 évi forradalom emléknapja.<br>A többi nemzeti szimbólumok a kovetkezők:-a Szent Korona,-a királyi jogár,-az országalma,-a koronazási kard,-a koronazási palast, vagy akár az Országház is.<br>Második nemzeti himnusz a Szózat. Ez Vörösmarty Mihály verse Egressy Béni zenejével.<br><br>"</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">4B - Az Országgyűlés (az Országgyűlés feladatai, szervezeti és működési rendje, az országgyűlési képviselők jogállása)</div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">Н ЧaБa в Парламенте = пришивает к 8 углам парламента <br><br>= Конституцию + Законы + Договора(иностраннык) <br>= счет (költségvetést) ++ солдатиков <br>= през/премьер/констсуд/курияпрез <br>= границы областей  <br><br>// внутри спикера, 14 bizottság и фракции <br><br>/ в год 2 ülésszak / 1/2 – határozatképes 2/3 – конституция <br><br>/ mentelmi jog / nem lehet köztársasági elnök, bíró, honvédség</div>
+            <div id="card">"Magyarország legfelsőbb állami és népképviseleti szerve az Országgyűlés.<br><br>Az Országgyűlés főbb feladatai:<br>- Megalkotja és modosítja az Alaptörvényt.<br>- Törvényeket alkot.<br>- Elfogadja a központi költségvetést.<br>- Megköti a legfontosabb nemzetközi szerződéseket.<br>- Dönt a hadiállapot és békekötés kérdéséről, a magyar honvédség belföldi és külföldi alkalmazásáról.<br>- Megválasztja a köztársaság elnökét, a miniszter elnöket, az Alkotmánybíróságot, a Kúria elnökét.<br>- Dönt a megyek területéről, székhelyéről.<br>- Közkegyelmet gyakorol.<br><br>Az Országgyűlés a Házszabály szerint működik. Az elnöket, alelnöket és jegyzőket választják tagjai közül. <br><br>Most 14 állandó bizottság működik, pl. Kulturális Bizottság, Külügyi, Gazdasági Bizottság. Vannak eseti bizottságok is, konkrét üggyel foglalkoznak.<br><br>Az ugyanolyan párthoz tartozó képviselők frakciót alakíthatnak.<br><br>Az Országgyűlés évenként 2 rendes ülésszakot tart nyari szünettel. Lehet rendkívüli ülésszak is. <br>- Az Országyűlés akkor határozatképes, ha több mint fele tagja jelen van. És az egyszerű többség elég a döntéshez. <br>- De az Alkotmány modosítására az összes képviselők kétharmada szavazata szükséges.<br><br>Az országgyűlési képviselők a közösség érdekében dolgoznak. Őket a mentelmi jog védi. Bizonyos állami posztokat képviselő nem tölthet be, pl. nem lehet köztársasági elnök, bíró, honvédség tagja, stb."</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">5A - A magyar nép eredete, vándorlása és a honfoglalás</div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">"Мокрый ПуДель родился = лежит на правом боку = Язык на 3 фрагмента – (4УРАЛ урал/обь -2ФинУгор ф/эстонцы юг-1Угор обь/запад волга урал)<br><br>За спиной пуделя 830(Вишневая иКоНа) в черной воде. 7солдатиков. Хвост с короной БОЛьно + БЕШЕНые прогоняют.<br><br> РеПу толкают=пАРаД в КАРПовый бассейн. Сказка HOTTAKE.  <br><br>Таматы на запад. 895(рубль) honfohlalas. 955(ПиПец) в АУГуСте-городе."</div>
+            <div id="card">"A magyar nép eredetét a nyelv segít megismerni. A magyar nyelv finnugor nyelvcsoporthoz tartozik.  <br><br>A magyar előtörténetben 3 nagy szakasz volt: az uráli, a finnugor és az ugor kor. Az uráli kor Krisztus előtt 4 évezred körül kezdődött el. A finnugor népek együtt éltek más ugor népekkel az Ob folyó és az Urál hegység között.<br><br>Krisztus előtt 2000 körül a finnugor kor kezdődik. A finnugor népek egy nagyobb csoportja nyugatra vándorolt. Tőlük származnak az észtek és a finnek. A finnugorok másik nagy ága, az ugorok dél felé vándoroltak.<br><br>Krisztus előtt 1000 körül az ugorok egy része visszaköltözött az Ob folyó környékére. A magyarság dél-szibériai otthonában maradt és nomád életet élt. Később nyugat felé vándorolt. A nyugat felé vándorló magyarság először Dél-Urál és a Volga folyó között élt. <br><br>830 körül már a Fekete-tenger partján élt. Itt született a torzsszövetség. 7 törzsből állt. <br><br>9 század végén a bolgár cár ellen harcoltak. Ekkor a besenyők nagy erővel támadtak a magyarokra, azért új házát kellett keresni. <br><br>Árpád vezetésével 895-ben érkeztek a Kárpát-medencébe. A Kárpát-medencében való letelepedés honfoglalás volt. <br><br>A magyar őskrónika alapján (amit Anonymus írt) Árpád és 7 vezér: Álmos, Előd, Ond, Kond, Tas, Huba és Töhötöm égy fehér lóért vette meg a Kárpát-medence területét egy szláv fejedelemtől.<br><br>A honfoglalás után a magyarok sokszor támadták a nyugati szomszédokat. Először nyertek. De az Augsburgi nagy csapás (955-ben) után a kalandozások kora befejeződött."</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">5B - A jogalkotás, az Országgyűlés jogalkotó tevékenysége<br></div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">"ПуП<br><br>= 4=hatalma - törvény/rendelet - régi ügyek - +EU - 1/2 2/3 - aláír - hirdetni<br><br>Jogszabály(правовая норма): Törvény --&gt; rendelet(постановление, указ, акт)  "</div>
+            <div id="card">"Az Alaptörvény szerint Magyarországon az Országgyűlésnek, a Kormánynak és tagjainak és az önkormányzatoknak van jogalkotó hatalma.&nbsp;<br>Az Országgyűlés az Alaptörvényt és törvényt alkothatja. A Kormány és miniszterek rendeletet alkothatnak. Az önálló szabályozó szerv (pl. Nemzeti Bank) vezetője rendeletet alkothat. Az önkormányzatok rendeletet alkothatnak.<br>A legfontosabb kérdéseket csak  törvényben lehet szabályozni. A rendeletek segítenek törvényeket alkalmazni.<br><br>A régi ügyeket nem lehet újra áttekinteni az új törvények alapján. (A jogszabályoknak nincs visszaható hatályuk.)<br>Magyarország 2004 május elseje óta az Európai Unió tagja, azóta az EU jogszabályai itt is érvényesek.<br><br>Törvényeket csak az Országgyűlés  fogadhat el, bármilyen tárgyról.<br><br>Az Országgyűlés a törvényeket egyszerű többségével fogadja el. Kivétel - sarkalatos törvények 30 legfontosabb tárgyról, példáúl állampolgárságról. Ilyenkor két harmad szavazat szükséges.<br><br>Az elfogadott törvényt az Országgyűlés elnöke aláírja, majd elküldi a köztársasági elnöknek.<br><br>A törvényeket ki kell hirdetni Magyarország hivatalos lapjában. A neve Magyar Közlöny. A törvény megjelöléseben van az év, a sorszám, a neve és a a törvény címe.<br>"</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">6A - Az államalapítás, a Szent István halála utáni évszázadok</div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">" Лодка<br>=Корма: kereszténység – Arpád(leszarmazottja)Géza – feleségül <br><br>=Géza(fiu)Vajk 997 – István 1038 – állandó hadsereg - egyháznak<br><br>=nincs utód (Imre) – más Arpád ág – 1Laszlo (91csatolta Horvat) – 2Andras(22Aranybulla) – 4Béla(mongol Batu 42 – újjáépítésének - „2 honalapítás”) <br><br>=3Andras(1301) – KárolyRobert – csúcstalálkozó <br><br>=(fia)1Lajos(42-82) – 3tenger mosott<br><br>Н ЛоДка<br>= Арпад дом ветка Геза крестица, женится на крещеной, <br><br>= Гезы сын Вайк (997-1000). Папа корону Иштван 1038 (ХВост) армия содержал и церквям помогал.<br><br>= Арпад дом ветка 1Лас успешный – 2А булла – 4Б (1270 д СаНи) (1223 битва на Калке +14лет) строил новую страну после монгол.<br><br>= 1301 дева ветка КаройРоберт  – csúcstalálkozót - 1Лай (1342 82 К ЧД ВД щит-вата) - «3 моря».<br>"</div>
+            <div id="card">A tizedik század közepén az európai államokban erős volt a kereszténység. Árpád leszármazottja, Géza fejedelem maga is lett keresztény és egy keresztény nőt vett feleségül.<br><br>Géza fia, Vajk, 997-től 1000-ig volt fejedelem. 1000-ben a pápa küldte neki a koronát. Így király lett és a keresztény nevét kapta, ami István volt. Első (Szent) István nevén 1038-ig volt a magyar király. Ő volt a magyar állam alapítója. Erős király volt. Állando hadsereget szervezett. Sokat segített a keresztény egyháznak.<br><br>Szent István után nem maradt fiú utód. A következő évszázadokban az Árpád-ház más ágaiból való uralkodók voltak a királyok. A legfontosabbak királyok voltak: <br>az I. (Szent) László, aki sikeresen védte az országot, <br>II. András, aki kiadta az Aranybullát, a fia, <br>IV. Béla (1235-1270), aki a tatárjárás után a romokon egy új országot épített.<br><br>1301-ben férfiágon kihalt az Árpád-ház. A leányágon Károly Robert, a nápolyi uralkodó fia, örökölte meg a magyar trónt. Ő hozta össze az első „közép-európai csúcstalálkozót” Visegrádon. Fia, I. (Nagy) Lajos (1342-1382) kiterjesztette a Magyar Királyság határait, úgyhogy „három tenger mosott”.<br></div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">6B    - A kormány (megalakulása, megszűnése, főbb feladatai, és működése) (6.8)</div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">"ШуБа с КАРМАНОМ = vegrehajtó hatalom = Орбан шубе министры стоят&nbsp;= Орбана парламент <br><br>= минстров Орбан javaslát, През nevez ki.&nbsp;= Новый парламент – новый карман<br>= орбан,&nbsp;пр рука - rendeleteket / лв рука - tudomány fejlod..пр нога - iranyit miniszterium / лв&nbsp;нога hadsereg rendorségсмотрит - ellenörizz önkotmányzatмежду ног - договора с котами<br>=tárgyalás неделю – акты Орбан подписывает – министры Парламенту отсчитываются"</div>
+            <div id="card">"A  Kormány a végrehajtó hatalom. A Kormány miniszterelnökből (kormányfőből) és miniszterekből áll. A miniszterelnököt az országgyűlési képviselők választják meg. A minisztereket a miniszterelnök javaslatára a köztársasági elnök nevezi ki. <br><br>A Kormány megszűnik az új Országgyűlés megválasztása után. A Kormány megszűnik, ha változik a miniszterelnök.<br><br>A Kormánynak sok feladata van:<br>1. Biztosítja a törvények végrehajtását – alkot rendeleteket, hogy végrehajtani a törvényeket.<br>2. Irányítja a minisztériumok munkáját.<br>3. Ellenőrzi a helyi önkormányzatok törvényességét.<br>4. Segít a tudomány és kultúra fejlődésében.<br>5. Iranyítja a Honvédség és a rendőrség munkáját.<br>6. Nemzetközi szerződéseket köt.<br>A Kormány hetente ülésezik. Rendeleteket bocsát ki és határozatokat hoz. A miniszterelnök ezeket írja alá és vezeti a Kormány üléseit.<br><br>A Kormány az Országgyűlésnek felelős. – A miniszterek az Orszaggulesnek rendeszeresen köteles beszámolni. "</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">7A - Mátyás kora és a török idők</div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">Новый СаД<br><br>= на входе, БелыйДом, [под ним ЧернаяПешка(1456)}, ХунядЯн győzott на 50лет. Колокольный звон - csata<br>= [ЧерПиВо+РюМка] сынМатьяш.Корвин Ворон принес \ чернаяАрмия \ деньги \ библио \ utod<br>= 16.турки varokat -[Душ]  Мохач csata -2Лай \ карта на 2части ФУр+ФГабсбург<br>= [ЧуГунок1541] Будапешт145- на 3 части stakadt – [БиТа1552] Мышь Eger<br>= [ВиЛы1686] На вила еу гонит ослабленный Турок - budapest.<br></div>
+            <div id="card">"A 15. század elején egyre több volt a harc a törökökkel. 1456-ban Hunyadi János Nándorfehérvárnál (ma Belgrád) oriási győzelmet nyert a törökök felett. Ez több mint 50 évre megállította a törököket. Még most is a világ minden keresztény templomban a déli harangszó a Nándorfehérvári csata emlékére szól.<br><br>Hunyadi János fiát, Mátyást, 1458-ban választották királlyá. 1490-ig uralkodott. Erős és bölcs király volt. Az az idő a magyar nép egyik legdicsőbb korszaka volt. Fényes volt a királyi udvar és gazdag az ország. Mátyás király híres hadsereget, a Fekete Sereget szervezte. Sajnos, törvényes utód nélkül halt meg. <br><br>A 16. század elején a török hadak sok várat fogláltak az ország déli részén. 1526-ban törtent a Mohácsi csata. Nagy Szulejmán csapatai ellen II. Lajos fiatal király elsöprő vereséget szenvedett és ott meghalt is. A király halála után az ország kettévált. Egy rész magyar főurat választotta, a másik Habsburg Ferdinándot. <br><br>1541-ben a törökök elfoglálták Budai várat. A főváros majdnem 150 évre török kézbe került. Az ország háromfelé szakadt. A nyugati rész a Habsburg Birodalom része lett. A középső rész török lett. Erdély önálló fejedelemség lett. A törökök a középső részen sok fontos várat fogláltak el. Az átmeneti magyar siker volt Eger várának védelme 1552-ben.<br><br>A következő 150 éven át folyamatos török elleni harc folytatódott Magyarországon. A pusztúlás oriási volt. 1686-ra gyengébb lett az oszmán birodalom. Európai hadak meggyőzték a törököket. Abban az évben felszabadult Buda is.<br>"</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">7B - A Kormány és tagjainak jogalkotása, az önkormányzati jogalkotás</div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">"<br>Сабля, - ""край/конец на толкает"" два кармана, К 2 края(vegehajt, bizonyos élethelyzetek szabályoz) rendelet. - hirdetni<br>K és Ö hatalma / rendelet =<br><br>= K végrehajtása = élet = k tagjai = hitdetni  <br><br>= Ö hoz kötelezi törvény (adok) = ha nem szabalyozak  (buszok) = település = számozza / kihirdeti<br>"</div>
+            <div id="card">"A Kormány és Önkormányzatok a végrehajtás részé. A kormány rendeletet bocsát ki a törvény végrehajtása vagy bizonyos élethelyek szabályozása érdekében. A kormány tagjai is hozhatnak rendeletet. A kormány kihirdeti rendeletet a Magyar Közlönyben.<br><br>--Az önkormányzatok kötelezés rendeletet hozhatnak, ha erre törvény kötelezi. <br>–Az Önkormányzatok sajt akarok is hozhatnak rendeletet, ha Országgyűlés vagy Kormány még nem szabályoznak az adott helyezett. Az önkormányzati rendelet csak a település területen kötelező. Az Önkormányzatok maga dönt arról, hogy számozza rendeletet és miként hirdetni ki. <br>"</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">8A - A Habsburg-uralom és az 1848-49 évi forradalom.</div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">- Osztrák tökök helyett. Erdély. önálló <br>- Külföldek települtetek. Magas adok vettek ki.<br>- Чай-Юла Bocskai István. Thököly Imre (kuruc hadvezér. <br>- Ухо-Гагарин II. Rákóczi Ferenc. Kurucak siker majd békeszerződés de nem szabadság. <br>- 200 évvel osztrák alá rendeltnemez.<br>- Régi feudális rendszer. politikai mozgalom egynlő választás  (jobbágy). <br>- Kritikus gazdaság, magyar együttműködi, 1825 országgyűlés.<br>- Széchenyi Istvan OGben magyarul, Lanchid, Akademia, hajózás. <br>- Kossuth Lajos, szószóló, Pesti Hírlap, reformok akart. <br>- 1848 Párizsi és Becsi forradalomok, ifjak, 12 pontok, (12 Becsbe).<br>- Felelős kormány Batthyány Lajos.<br>- Szeptember, osztrák támadás az új kormány ellen.<br>- 49 tavasz Buda visszafoglaltak. Kossuth Lajos elnök. <br>- 200k orosz, harc reméltelen, Görgey Artur letette fegyvert.<br>- Aradon Oktober kivégeztek 13 tábornok, Pesten Batthyány. <br>- Egyesitettek Hab Birodalom.</div>
+            <div id="card">"A törökkor után Magyarország területét elfoglalta az osztrak haderő. Déli és középső Magyország Habsburg Birodalom része lett. Az Erdélyi Fejedelemség megőrizte önállóságot.<br><br>Békes időben megindult a fejlődés. Az üres vidékekre külföldiek költöztek be. De a parasztokra magas adókat vetettek ki. És a Habsburgok korlátozták a protesztánsok vallásszabadságát.<br><br>A következő két évszázádban a magyarok állandóan harcoltak a szabadságért.<br><br>Az első Habsburg-ellenes felkelés (1604-1606) vezetője Bocskai István volt. Sikeresen elfoglalta az északi várokat és városokat és az Erdélyt is. De majd békét kötött a Habsburg-udvarral.<br><br>Kevésbe sikeres volt Thököly Imre 17 század végen.<br><br>1703-ban kezdődött a szabadságharc a II. Rákóczi Ferenc vezetésével. A küzdelem váltakozó sikerrel folyt a kurucok (Rákóczi csapatai) és labancok (császári hadak) között. 1711-ben a kurucoknak le kellett tenni a fegyvert. Megkötötték a békeszerződést a magyarok számára kedvező feltételekkel. De a függetlenséget nem kapta az ország.<br><br>1800-as évek elején új politikai mozdulatok megszülettek Magyarországon. A céljuk a régi feudális rendszer átalakítása volt. Az emberek 90 százaléka jobbágyok voltak. Még az 1848-as forradalom előtt elkezdődött a reformkor. A legfontosabb kezdeményezők között felsorolhatjuk Szécsényi Istvánt és Kossuth Lajost. <br><br>Szécsényi István kezdeményezései között a Magyar Tudományos Akadémia, a Lánchíd, az Óbudai Hajógyár, a dunai gőzhajózás.<br>Kossuth Lajos az 1848-1849 évi szabadságharc meghatározó személye volt. Miniszter, Honvédelmi Bizottmány elnöke, majd Magyarország elnöke volt. A szabadságharc bukása után elhagyta az országot. <br><br>1848 március 15-én Pesten elkezdődött  a forradalom. Vezették a márciusi ifjak (köztük Petőfi Sándor és Jókai Mór). A nemzet legfontosabb követeléseit  a Tizenkét pontban fogalmazták meg. Kinevezték az első felelős magyar kormányt gróf Batthyány Lajos vezetésével. <br><br>A bécsi udvar 1848 szeptemberében fegyveres támádast indított a magyar kormány ellen. Elkezdődott a szabadságharc. 1849 májusára felszabadult az ország. Az osztrák császár az oroszok segítségét kérte. 1849 nyarán 200 ezer orosz katona vonult be Magyarországra. És a szabadságharc reménytelen lett. A magyarok letették a fegyvert. Utána a Habsburgok több ezer embert börtönöztek be. A kivégzések száma közel száz volt. Aradon 1849. október 6-án egyszerre 13 tábornokot végeztek ki. A Habsburgok az országot egyesítették Ausztriával.<br>"</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">8B  - A köztársasági elnök (megbízatásának keletkezése és megszűnése, a köztársasági elnök hatáskörei)<br></div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">ВОБЛА вибратор – чулок на томе -<br><br>- Államfője – hatalom - SulyokTamas <br>– OG 5év – nem Foglalhat <br>– 5 év – lemond – megfosztas törvény megsirt – betegség -  meghalt<br><br>Nemzetközi – belsó – kinevezes – honvedség föpanacsok <br><br><br>(вешалка-привязаны бумаги-послы = календарь-орбан-подпись = тистошег-cimrket-кедь-паспорта = парашут чеснок)</div>
+            <div id="card">"Magyarország  államfője a köztársasági elnök. A köztársasági elnök önálló hatalom. Jelenleg Sulyok Tamás (Fidesz) [Áder János, Novák Katalin, Kövér László] a köztársasági elnök.<br><br>A köztársasági elnököt az Országgyűlés választja meg öt évre. A köztársasági elnök nem folytathat más kereső foglálkozást. (Nem vállalhat más tisztséget. Művészeti alkotmányból, tudományos munkából tud szerzi pénzt. )<br>Az elnöki megbízatás megszűnik, ha <br>- az 5 év lejár, <br>- más kereső tevékénységet folytat, <br>- lemond vagy a megfosztás miatt (ha törvényt megsért).<br>- vagy 90 napon túl súlyosan beteg, <br>- az elnök meghalt <br><br>A köztársasági elnök fontosabb hatáskörei a következők:<br>I. Nemzetközi ügyek<br>  1. Képviseli a magyar államot külföldön.<br>  2. Nemzetközi szerződéseket köt.<br>  3. Megbízza a Magyarország nagyköveteit és követeit, fogadja a külföldi követeit.<br><br>II. Belső politikai és jogalkotási feladatok<br>  4. Kitűzi/meghatározza a választások időpontját.<br>  5. Fontos a szerepe az Országgyűlés munkájában: javaslatot tesz a miniszterelnökre, a Kúria elnökre, a fő ügyészre, valamint aláírja az új törvényeket.<br><br>III. Kinevezési, kitüntetési és egyéb hatáskörök<br>  6. Egyes tisztségekbe kinevez, előléptet vagy felment (például a bírókat, a Magyar Nemzeti Bank elnökét, az egyetemi tanárokat).<br>  7. Adományozza a címeket, kitüntetéseket.<br>  8. Gyakorolja az egyéni kegyelmezés jogát.<br>  9. Dönt az állampolgárságról.<br><br>IV. Védelmi feladat<br>  10. A köztársasági elnök a Magyar Honvédség főparancsnoka.<br>"</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">9A - A kiegyezéstől az első világháborúig</div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">РоДник = 1867(ЛиСа) – до нее солдатики, немецкий язык – пруссаки – Диак Фрак – ЛиСа<br><br>= (külügyeket, katonai ügyeket, és a pénzügyet) – mezőgazdaság – OGy adófizetés - 1873(яЗыК) OB+B+P főváros<br><br>= nemzetiségek elégedetlen – szúk választójog<br></div>
+            <div id="card">A szabadságharc bukása után katonai rend volt Magyarországon. Az oktatás és közigazgatás nyelve a német lett. <br><br>Majd a porosz-osztrák háborúban vereséget szenvedtek az osztrakok.  Ezért a Habsburgok megértették, hogy kiegyezni kell a magyarokkal, mert szükségük volt békére és magyar támogatásra. <br><br>A kiegyezési tárgyalásokat magyar részről Déak Ferenc irányította. 1867-ben megtörtént az osztrák-magyar kiegyezés, és megszületett az Osztrák-Magyar Monarchia. (A Habsburg-ház  tovább uralkodott, de az államügyek egy részét közösen intézte a két tagállam.) A Habsburgok uralkodtak, de bizonyos államügyeket a magyarokkal intézhettek: külügyeket, katonai ügyeket, és a pénzügyet.<br><br>A magyar gazdaság a békes években gyorsan fejlődött. A gazdaság vezető ága mezőgazdaság lett. Fejlődött a gyáripar is – malomipar, cukorgyáras stb.<br><br>Az Országgyűlés sok fontos törvényt fogadott el. Bevezették a kötelező népoktatást. Fejlődtek a városok. Budapest lett a főváros (1873). De csak a lakosság egy tizedének volt a választójoga. És továbbá is súlyos problémát jelentett a nemzetiségi kérdés.<br></div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">9B - Az Alkotmánybíróság és az alapvető jogok biztosa</div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">"Некрасивая РыБа и РаБ = бумаги к красной криге, Раб 2х хейтеров зеленый и nemzetseg<br><br>=ABiro  alaptörvény védelem <br>---- 1 személy, szervezet (ha biro megsért), <br>--- 2 bíró (ellenőrizhat jogszabaly), <br>--- 3 OGy, kztrs elnök (költségvetés, adó) <br>= OGy 15 tagjai / 12 évre – 2/3<br><br>=Ombudsmen&nbsp;– ember alapjogaik vedelem – bárki kezdemenyez- Kivizsgálja az alapvető jogokat sértő ügyeke<br>= OGy / 6 évre – 2/3 <br>= beszámol OGynek<br><br>Helyetteseit – zöld és nemzetség"</div>
+            <div id="card">"Az Alkotmánybíróság az Alaptörvény védelmének a legfőbb szerve. Felülvizsgálja a törvényeket. Ha egy törvény ellentétes  az Alaptörvénnyel, megsemmisíti azt a törvényt.<br><br>-Alkotmányjogi panasszal fordulhat egy személy, vagy egy szervezet, ha a bíróság az alaptörvény-ellenes döntést hozta meg. <br><br>-A bíró is indíthatja az eljárást és ellenőrizheti/kivizsgálja, hogy egy jogszabály összhangban van-e az Alaptörvénnyel.<br><br>-Vannak viszont olyan eljárások, amelyeket csak maga az Országgyűlés, a köztársasági elnök, a Kormány vagy az országgyűlési képviselők tudják kezdeményezni (például, költségvetés vagy új adók bevezetésének  ellenőrzése).<br><br>Az Alkotmánybíróságnak 15 tagja van. Azokat az Országgyűlés választja 12 évre. Az Országgyűlés az Alkotmánybíróság tagjai közül elnököt választ. Az alkotmányibbakat az Országgyűlés két harmadával választják. Az Alkotmánybíróság tagjai nem lehetnek tagjai pártnak, politikai vagy kereső tevékénységet nem folytathatnak.<br><br>Az alapvető jogok biztosa = ombudsman<br>tevékenysége a következő:<br>-Az alapvető jogok biztosa védi az emberek alapjogait. Az eljárását bárki kezdeményezheti.<br>-Kivizsgálja az alapvető jogokat sértő ügyeket. Kezdeményezi orvoslásukat/ javításokat. <br>-Az alapvető jogok biztosa nem lehet tagja pártnak és nem folytathat politikai tevékenységet.<br>-Évente beszámol tevékenységéről az Országgyűlésnek.<br>Az alapvető jogok biztosát az Országgyűlés választja.  A képviselők két harmadának szavazata szükséges.  6 évre választják.<br><br>A helyettesei tévekénysége a következő: <br>-a jövő nemzedékek érdekeinek védelme („zöld”)<br>-Magyarországon élő nemzetiségek jogainak védelme.<br>"</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">10A  - Az I. világháború és annak következményei</div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">"= megölte – kitört - antanta + usa<br><br>= 1918 okt - „őszirózsás”, gróf Károlyi Mihály, függetlenség – <br><br>= 1918 nov német forradalom miatt győztesek követelesek, Karoly lemond<br><br>= 1919 kommunistok Bela Kun megőriztek hatarokat.<br><br>= 1920 tianoni – 2/3 – kiralyság  - Horthy Miklos (Teleki Pal)"</div>
+            <div id="card">"1914 nyarán Európában kitört (разразилась) a háború. Azzal kezdődött, hogy egy szerb merénylő (GPrincip, Cserna Ruka/Mlada Srbia, egy terrorista szervezet tagja) meggyilkolta az osztrák trónörököst, Ferenc Ferdinandot (Aurel Popovici, könyv- „Die Vereinigten Staaten von Groß-Österreich” föderálisas  ). A következő években egyre több ország lépett be a háborúba, így átterjedt az egész világra.<br><br>Az egyik oldalon volt Németország, az Osztrák-Magyar Monarchia és Olaszország. A másik oldalon voltak antant nagyhatalmai: Nagy-Britannia, Oroszország, Franciaország és más országok. 1917-ben az Egyesült Államok léptek be a háborúba az antant oldalán. 1918-ban az első világháború az antant győzelmével ért véget. <br><br>Magyarországon 1918 oktoberében őszirózsás forradalom tört ki. Károlyi Mihály lett a miniszterelnök. Magyarország köztársaság lett (kikiáltották ). De az ország területi egységét nem sikerült megőrizni, mivel a háborúban vesztes állam volt. Rövid ideig proletárdiktatúra volt Magyarországon Kun Imre. <br>A háború végén csehszlovák és román csapatai csatlakoztak az antanthoz. És nagy területeket fogláltak el Magyarországon. <br><br>1920 június 4-én aláírták trianoni békediktátumot. Ez alapján Magyarorzság elveszítette a területe kétharmadát. Ott a lakosság többsége magyar volt. <br><br>A magyar hadsereget leszerelték (csökkentették), létszámát korlátozták, és a fegyverkezést betiltották. <br><br><br>Magyarország újra királyság lett, de király nélküli királyság. Az országot megválasztott kormányzó, Horthy Miklós irányította 1944-ig. Teleki Pál miniszterelnök volt.<br>"</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">10B - Az igazságszolgáltatás és az ügyészség</div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">"= isszl &gt; birok – védi alkotmány rendszer / em.jog – nem part – biroság egenlő<br><br>= (дома-стул-интел-куры) helyi – törvényszék(megyek) – ítélőtábla(5) – kúria<br><br>=  ugy vedi em.jog / szerv – alkot.rendszer / orszag biztonság sétrik – képvis vádat – lgföbb – fellebbviteli fó – fö – helyi <br><br>= OGy kuria / legföbb – köz elnök birok"</div>
+            <div id="card">"  MOn az igazságszolgálatást a bíróság gyakorol. A birok fügétlenül. Nem lehet politikai tevékenység gyakorolni vagy politikai partok reszt venni. A biroságok védik az emberek jogait és alkotmányos rendet, büntetik bűnelkövetőit. A biroság ellőtt mindenki egyenlő. <br><br>MOn biroságok következő – kúria, ítélőtábla, törvényszék, és járásbíróság. Az ügyek többség elsőfokon az járásbirok bíráljak. A másodikfokon az törvényszékben fordulnak. A súlyos ügyekkel a törvényszék birálják és második fokon az ítélőtáblával. MOn öt megyében működik – BP. Gy. Pécs, Seged, Debrecen. A legfelső biroság szerve a kúria van. <br><br>A bíróság tárgyalások nyilak. A köztarsaság a birokat nevezi és felmenti.  az OGy a kúria élnőket választja.    <br><br>Az ügyészség védi az emberek jogait és szervezetek jogait is. Az ügyészség olyan bűnökkel foglalkozik amelyiket az alkotmányos rendet és ország biztonságot sértik. <br><br>Az ügyészség képviseli a vádat a bíróságban. <br><br>A legfőbb ügyész az ügyészség szervezetet vezeti. Az ügyészeknek csak a legfőbb ügyész és főügyészek adhatnak az utasítást. <br><br>MOn következó ügyészi szervezetek – legfóbb ügyészség, fellebbviteli ( felsőbb fokú ) főügyészségek,  főügyészségek, városi ügyészségek. A köztarsaság elnök a legfőbb ügyészt javasolt és OGy választja. És a legfőbb kinevezi ügyészeket. Ök nem lehet politikai tevékenységet folytatni és venni reszt partokban. "</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">11A - A második világháború<br></div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">= Trianon – 30években- szoros nemetekkel – remény visszaszerezni – 38 becsi döntes > szolakia – 39 ЧС szétesett - Karpatalja – 40 II becsi > erdely – Teleki Pal  öngyilkosságot követett - 41 jugoszlavia <br><br>= 41 belepett 200ezer – 42 Voronezs Don folyo partján – 43 szovjet támadásban óriás veszteség <br><br>= 44 titkos tárgyalás – nemetek foglaltot MO – 44 kormany ellepett haborubol - nyilások vették át az uralmat – BP tele volt aknákkal – szovjet foglalat MO -  45 majusban vége<br></div>
+            <div id="card">"Magyar társadalom és gazdaság nehéz helyzetben volt a trianoni szerződés után. A harmincas években Magyarországnak szoros gazdasági kapcsolata volt Németországgal. Német hatásra zsidóellenes törvényeket fogadtak el. A magyar politikai elit azt remélte, hogy a németbarát magatartás segít visszaszerezni a magyar területeket. <br><br>Amikor a német hadsereg 1938-ban elfoglalta Csehszlovákiát (szétesett), a felvidéki, majd a kárpátaljai területeket visszakapta Magyarország. <br><br>1939-ben Hitler elfoglalta Lengyelországot. Kitört a második világháború. Magyarország ekkor nem lépett be a háborúba. <br><br>1940-ben visszakapta Erdély északi részét.<br>Teleki Pál miniszterelnök 1940-ben örök barátsági szerződést kötött Jugoszláviával. <br><br>Németország 1941 márciusában határozta el Jugoszlávia megtámadását, és a magyarok részvételét kérte. Teleki Pál látta, hogy Magyarország a háborúba (az ország semlegességi politikát folytat) és tragédiába rohan, és öngyilkosságot követett. Ezután Horthy új miniszterelnököt nevezett ki, és Magyarország megtámadta Jugoszláviát. Magyarország délvidéki területeket visszakapta.<br><br>1941-ben Hitler megtámadta a Szovjetuniót. Magyarország belépett a háborúba a Szovjetunió ellen.<br>A 2. Magyar hadseregben 200 000 fő volt. 1942-ben Voronezs mellett, a Don folyó partján foglalták el védőállásaikat. <br>1943-ban megindult szovjet támadás és felmorzsolta a magyar erőket. A halottak, sebesültek és hadifoglyok száma óriási volt. <br><br>A magyar kormányzat titkos tárgyalásokat kezdett az angolszász hatalmakkal. Hitler megtudott erről, és 1944 márciusában németek megszállták Magyarországot. A gazdasági javakat (olaj) fizetség nélkül Németországba szállították. A magyar zsidókat haláltáborokba szállították.<br><br>Közben nyilvánvaló lett, hogy a németek elveszítik a háborút. A magyar kormányzat 1944-ben bejelentette a kilépést a háborúból, de már késő volt. Német nyomásra a nyilások vették át az uralmat. Eközben a szovjet csapatok Magyarország egyre nagyobb részét foglalták el. 1945 tavaszán a németek letették a fegyvert. Magyarország a viszzacsatolt területeket ismét elveszítette.<br>"</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">11B - Az Állami Számvevőszék, a Magyar Nemzeti Bank, a Költségvetési Tanács</div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">Funkciója: költségvetés ellenőrzése (összeállitasa, kiadása, pénzügyi politika)<br><br>ASZ: elnök  OGy 12évre – OGy/állami cégek gazdáékodnak bevételekkel/kiadásokkal<br><br>MNB: felel pénzügyi p – bocsát ki pénz – beszamol OGy<br><br>KT: új költség törvény ha jó - 3tagja: saját elnök + ASZ elnök + MNB elnök</div>
+            <div id="card">"Ezeknek a szervezeteknek a fő funkciója és célja az állami költségvetés ellenőrzése (a költségvetés összeállítása, a kiadások és a pénzügyi politika ellenőrzése).<br><br>Állami Számvevőszék<br>Az Országgyűlés választja meg az elnökét. Figyelemmel kíséri, hogyan az Országgyűlés illetve az állami tulajdonú cégek hogyan gazdálkodnak a vagyonnal, a bevételekkel és a kiadásokkal, Az általa végzett ellenőrzésekről jelentésben tájékoztatja az Országgyűlést. <br><br>A Magyar Nemzeti Bank<br>Magyarország központi bankja, felel az ország pénzügyi politikájáért, bankjegyet és érmet bocsát ki. A MNB elnökét és alelnökeit a köztársasági elnök nevezi ki.Beszámol az Országgyűlésnek az ország pénzügyi politikájáról.<br><br>Költségvetési Tanács<br>segíti az országgyűlés munkáját, ellenőrzi a költségvetési törvény éleg jó. Három tagja van: a saját elnöke, az MNB elnöke és az ÁSZ elnöke. A Költségvetési Tanács elnökét 6 évre nevezi ki a köztársasági elnök.  "</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">12A - A Rákosi-rendszer és az 1956. évi forradalom és szabadságharc</div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">"Горный ДеД – красный ""РАК МАТрЕШка"" на часах (1947) – слева направо <br><br>=войска kivonul – köztársaság – főtitok – államosítás – ipar/mezőgazdaság - ellenség üldözték, megkínoztak<br><br>=(23okt56) tüntetés – 3követelték – 28fegzver felkeles – Nagy Imre -  tömegre sörtüzet nyitottak – 4nov támadás – elbukott"</div>
+            <div id="card">"A háború után a szovjet csapatok nem vonultak ki az országból. 1945-ben A királyság megszűnt, az ország államformája köztársaság lett. Magyarország a demokratikus fejlődés útjára lépett.<br><br>Eközben a szovjet erők segítségével megkezdődött a kommunista hatalomátvétel. <br>= 1947-ben az új kormányt szovjetbarát politikusok alkották. <br>= 1948-ban a kommunista egypártrendszer alakult ki. A kommunista párt főtitkára és a miniszterelnök Rákosi Mátyás volt. <br>Megkezdődött az ipar államosítása. Erősen fejlődött az ipar, de a mezőgazdaság rosszabb helyzetbe került. <br>A más politikai nézetű embereket üldözték, sok embert megkínoztak.<br><br>1956. október 23-án egyetemisták tüntetést szerveztek. Követelték <br>- a többpárti választásokat, <br>- a sajtószabadságot, <br>- a szovjet csapatok kivonását. <br><br>A forradalom, majd a fegyveres felkelés megkezdődött. Október 28-án új kormány alakult Nagy Imre vezetésével. A kormány megkezdte a tárgyalásokat a szovjet csapatok kivonásáról.<br> <br>Eközben sok véres tragédia is történt. A Kossuth Téren és vidéken a tömegre sortüzet nyitottak. <br>Majd a szovjet vezetés a forradalom (fegyveres lázadás) leveréséről határozott.  A szovjet hadsereg november 4-én támadást indított Budapest ellen. A forradalom elbukott."</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">12B - A Magyar Honvédség, a rendőrség és a nemzetbiztonsági szolgálatok.</div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">Голубой ДуБ солдат-полицей-шпик<br>=honvédség: haza védelmet – szerződés kollektív – katasztrófa megelőzés és után<br><br>=rendőeség: közbiztonság/közrend – őrzi határt<br><br>=nbsz: állam függerlenség, törvényes rend<br><br>=H < OGy, K, TE ;    R / NBSz < kormány irányítja</div>
+            <div id="card">"A Magyar Honvédség <br>- a haza katonai védelmét és <br>- a nemzetközi kollektív védelmet látja el. Segít <br>- a katasztrofák megelőzésében, egy katasztrofa után is segít.<br><br>A rendőrség fő feladata <br>- a közbiztonság és a közrend védelme. <br>- őrzi az államhatárt.<br><br>A nemzetbiztonsági szolgálatok fő feladata <br>- MO függetlenségének és <br>- törvényes rendjének védelme.<br><br>A honvédség, a rendőrség és a nemzetbiztonsági szolgálatok működéséről sarkalatos törvények szólnak.<br>"</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">13A  -   A Kádár-rendszer és az 1990 évi rendszerváltás</div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">=56 bukása - Kádár Jánost - 1958(ПиВо) kivégezték Nagy Imre – <br><br>=növekedett – Lakótelepek – munkanélküliség – kölcsönzött - csődbe <br><br>=Gorbacsov - 1989 alkotmánymodosítás - 6 párt – pm/Antall József, Göncz Árpád<br></div>
+            <div id="card">"Az 1956. évi forradalom bukása után a szovjet vezetés Kádár Jánost bízta meg a kormány vezetésével. A szovjet támadás ellen sztrájk volt, miután sok embert letartóztattak. <br><br>1956 decemberében statáriumot hirdettek. Nagy Imrét, aki a forradalom idején új kormányfő lett, és társait 1958-ban kivégezték. Többek hasonló sorsra jutottak.<br><br>Az 1960-as évektől azonban az életszínvonal folyamatosan növekedett. Lakótelepek épültek, nem volt munkanélküliség. Kisebb vállalkozások és kiskereskedelem is voltak. (az ország aktívan kölcsönzött pénzt nyugati országoktól és szervezetektől.) De a szocialista gazdaság csődbe került. Az ország eladósodott.<br><br>Amikor a Sovjetunióban Gorbacsov került hatalomra, ő demokratikus változásokat bevezetett. És a magyar változások is gyorsabbak lettek. <br><br>1988-tól a reformkommunisták kerültek hatalomra, több demokratikus törvényt fogadott el az Országgyűlés. Különböző pártok alakultak. <br>1989. október 23-án alkotmánymodosítás után (ami valójában új alkotmány elfogadása volt), Magyarország újra köztársaság lett. Új választótörvényt fogadtak el. <br><br>1990-ben új választások voltak és 6 párt jutott be a parlamentbe. A miniszterelnök Antall József, köztársasági elnök Göncz Árpád lett. <br>1991-ben az utolsó szovjet katona elhagyta az ország területét.<br>"</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">13B - Pártok, szakszervezetek és más érdekképviseleti szervek</div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">=többpárt rendszer – hatalmat megkapja – programja – függetlenek – ügyész – közvetlenül – céljait<br>=munkavállalók – vállalkozók – munkaviszonnyal – <br>=gazdasági kamarák – Orvosi - Akadémia<br></div>
+            <div id="card">"Magyarországon többpárt rendszer működik. <br><br>Pártot az emberek azért alapítanak, hogy a párt a választáson a kormányzati hatalmat megkapja. <br><br>A pártnak a programja van, amely tartalmazza a politikai célokat. <br>A pártok függetlenek. Sem az ügyész, sem más szerv nem ügyeli fel őket. <br><br>A pártok hatalmat közvetlenül nem gyakorolhatnak. Egyetlen párt sem irányíthat közvetlenül állami szervet. <br><br>Törvény szerint, vannak olyan tisztségek, közhivatalok, amelyeket párt tagja nem töltheti be. <br><br>A pártok a céljait a parlamenti döntésekben  érvényesítik.<br><br>A szakszervezetek és más érdekképviseleti szervek védik és képviselik a munkavállalók és a vállalkozók érdekeit. <br>Szakszervezet – egy olyan szervezet, amely védi az emberek munkaviszonnyal kapcsolatos érdekeit.<br><br>Más érdekképviseleti szervezetek a szakmai és a gazdasági kamarák, pl. Magyar Orvosi Kamara, Magyar Művészeti Akadémia, Magyar Tudományos Akadémia.<br>"</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">14A - A magyar művészet képviselői<br></div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">"Гробница-ЧуДо (ЩиТ)<br>Дно – левая – дальняя – правая – ближняя<br>Огонь:гитара – губы – гусь – гвоздь – гиря – дом<br>Roman:gotika – renesszansz – barokk:rokoko – klasszicizm – szeceszio – szocrealm<br><br>= Pannonhalmi apátság / koronázási palást, koronázási jelvények, Szent Jobb / Jaki apátság (1256, szombathely) / Budai nagyboldogasszony (matyas ) templom<br><br>= firenzei mesterek / könyvtár / kódexek <br><br>= fertődi Eszterházi-kastély <br><br>= a váci székesegyház / Pest / nemzeti muzeum (виш.чащка, Pollack Mihály) / arc taj / biedermeier(napoleon) / történeti festészet (Munkács Mihaly)  <br><br>= Lechner Ödön Iparművészeti Múzeum(зел крыща), / Kós Károly Állatkertet, / nagybányai művésztelep, avantgárd(Csontvári Kosztka), impresszionisták(Szinyei Pál)<br>"</div>
+            <div id="card">"Az Árpád-korra a román stílus tömör formákkal volt jellemző. Ettől a kortól leginkább az egyházi épületek és kellékek (a Pannonhalmi apátság, és István jelképei maradtak (koronázási palást, szarkofág, jobb keze, a Szent Korona, a jogar, az országalma és a koronázási kard, az utóbbiakat a Parlamentben lehet látni).<br><br>A 12 század utolsó negyedétől a gótika megjelenik Magyarországon. Itt pedig legtöbbször a gótika és roman stílus harmóniáját lehet látni, olyan, például, a gyulafehérvári székesegyház (most Alba Iulia, Románia). A késői román stílusban épült 1256-ban a Jáki templom (Szombathely). IV Béla (1235-1270) idején már Buda volt a központ. Ott épült a Várnegyed és a Nagyboldogasszony templom (Mátyás).<br><br>A 15 században Hunyadi Mátyás király idején (1458-1490) a reneszánsz megjelenik Magyarországon. Akkor sok firenzei mester dolgozott Magyarországon. Mátyásnak híres könyvtára volt, sok kodex (Corvinák) is elkészült az uralkodása alatt.<br><br>A 17 században a törökök után az országot a barokk stílusban újjáépítették. A barokk gazdag, ünnepélyes stílus. Ennek a könnyed és polgár változata a rokokó. Az egyik legszebb magyar rokokó épület a fertődi Eszterházi-kastély.<br>Az 1760-as évektől a tiszta és egyszerű klasszicizmus elterjedt Magyarországon. Akkor épült a váci székesegyház. Az 1800-as években ebben a stilusban átépült Pest. A klasszicizmus egyik legfontosabb hazai épülete a Nemzeti Múzeum, amely 1846-ban megnyitott. Pollack Mihály tervezte. A festészetben az arcfestészet (Barabás Miklós) és a tájfestészet népszerű lett. A polgárság stílusa volt a biedermeier (Napóleon-kor 1815 1848), amely az élet apró részleteit és családi életet ábrázolta. A történeti festészet nagy figurai: Munkácsi Mihály és Feszty Árpád.<br>A szecesszió 19 század végén megjelenik Magyarországon. Ez a stílus fő építészei voltak Lechner Ödön (Iparművészeti Múzeum) és Kós Károly (Állatkertet átépítette). <br><br>A 20 század elején olyan csoportok alkottak Magyarországon, mint a nagybányai művésztelep (Ferenczy Károly, Csók István), avantgárd mozgalom (Kernstok Károly, Csontvári Kosztka Tivadar), impresszionisták (Rippl-Rónai József, Szinyei Pál, Kisfaludi Zsigmond szobrász).<br><br>A két világháború között legfontosabb stílusa a Bauhaus-iskola volt, amelynek magyar alkotóit világszerte ismerik.<br>Az 50-es évektől a szocreál, vagyis a szocialista realizmus  volt a hivatalos művészeti stílus. A rendszerváltás után a művészetben is sok változás megtörtént."</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">14B - A helyi önkormányzatok<br></div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum"><br>онкор 2го р-н; институт общих (közügy) дел и власти - вход на красной книне (alapveto) институт (intetmeny) - табло с картой 19+р-ны - ждуны голосуют 5 - вход кр книга определяет право и <br><br>лево - <br>   -- регулировщик (ügyeit önállóan) + значки (jelképeket) <br>   ++ владеет (Tulajdonosa) + в карман (támogatást) + налоги ()<br>   ++ рукопожатие () + бумаги в карман (Kezdeményezéssel)<br><br>право (kotelezesegek) -<br>   -- ivóviz + ovolda + neveles + szocialis + égeszségügy ellatas<br>   ++ közvilagitas + közut + köztemetó fenntartas<br>  ++ nemzeti kisebbség ellatas<br>  ++ korhaz<br>polgarmester за рулем<br><br><br>  *  *  *  *   *   *   *<br>= önkormányzás - ez helyi közügyek önálló, demokratikus intézése.<br><br>= A (19) megyékben - városok és községek, fővárosban - kerületek.<br><br>= választópolgárok képviselő-testületet választják 5 évre. A megyei önkormányzatnak - közgyűlés.<br><br>= Az önkormányzatok jogait és kötelezettségeit csak törvény határozza meg, alacsonyabb szintű jogszabály nem.<br><br>= Jogai: ügyeit önállóan szabályozza, Tulajdonosa (utak, óvódák, vállalatok), bevétel és állami tamogatas, megállapítja adok, saját munka rend, kezdeményezés kormany-miniszterok.<br><br>= Feladatai: egészség ivóvíz ellátás, óvoda és néveles, egészségügy, szociális, köztemető, korhazok<br><br>= Polgármester </div>
+            <div id="card">"MOon a helyi közügyek intézése és a helyi közhatalom gyakorlása érdekében helyi önkormányzatok működnek.<br>Az Alaptörvény szerint az állam alapvető intézmények az önkormányzatok. <br><br>Magyarországon főváros és 19 megye van. A megyékben városok és községek vannak, a fővárosban pedig kerületek. <br><br>A község, a város, a főváros és kerületei helyi önkormányzás jogával rendelkeznek. A helyi önkormányzás - ez helyi közügyek önálló, demokratikus intézése. <br><br>Az ott lakó választópolgárok képviselő-testületet választjak. A megyei önkormányzatnak a neve közgyűlés. A helyi választásokat 5 évente megtartják.<br><br>Az önkormányzatok jogait és kötelezettségeit csak törvény határozza meg, alacsonyabb szintű jogszabály nem.<br><br>A helyi képviselő-testület az Alaptörvény szerint:<br>   1)  Az önkormányzati ügyeit önállóan szabályozza.<br>   2) Tulajdonosa az önkormányzati vagyonnak (utak, óvódák, vállalatok, stb.).<br>   3) Saját bevételre jogosult és állami támogatást kaphat.<br>   4) Megálapítja a helyi adókat.<br>   5) Önállóan alakítja a szervezetét és működési rendjét.<br>   6) Önkormányzati jelképeket alkothat.<br>   7) Kezdeményezéssel fordulhat a Kormányhoz, miniszterhez stb.<br>   8) Szabadon egyűttműködhet más helyi képviselő-testületekkel.<br><br>Valamennyi önkormányzat kötelező feladatai: <br>   a) az egészséges ívóvízellátás, (обвидеть,обозреть,обеспечить).<br>   b) az óvodai oktatás.<br>   c) nevelés.<br>   d) az egészségügyi alapellátás.<br>   e) a szociális alapellátás.<br>    f) a közvilagítás. <br>   g) a helyi közutak fenntartása. <br>   h) a köztemető fenntartása.<br>   j) a nemzeti kisebbségek jogainak ellátása. <br>A nagyobb helyeken önkormányzatoknak több feladata van: <br>- kórházak, kulturális intézmények fenntartása.<br>A helyi képviselő-testületnek az elnöke a polgármester.<br>A képviselő-testület hivatalát (polgármesteri hivatalt) a jegyző vezeti.<br>"</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">15A  - A magyar zene és tudomány képviselői</div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">"Грязный ПоДвал – слева комната 4 угла, дальше.. справа паутина 5 вершин 1-3-3-3-1<br><br>Скрипка<br>Кодовый Замок, Белый Бар, стопки 10000. За ним музыка, солдаты verbunkos ВЕРевкой БУНтаря с КОШкой танцуют.<br><br>- Erkel Ferenc (на балконе фрак(огонь-рак)) – Гимн<br>- Liszt Ferenc (фрак с листом(гагарин-вилы)), Magyar rapszódiá.<br>- Bartok Béla (Белый бар(вагон-чип)), zeneszerző, népzenekutato<br>- Kodály Zoltán (кодовый замок(вата-лиса)), zeneoktatas<br>- Оперетта – ЛЕзавие саХАР Фрак, Кальмар Имя<br><br>= Справа комната 1-3-3-3-1<br>- Kőrösi Csoma Sándor - КОРОб м ШИпами, дом, внутри словарь с горой-тибетом<br>- математика - Bolyai Farkas, János(geometria), Newmann Janos(nobel)<br>- физика - Jedlik Ányos(динамо elv), Teller Ede(atombomba), Krausz Ferenc(nobel)<br>- доктора - Semmelweis Ignác(хлор), Szent-Györgyi Albert(С витамин), Karikó Katalin(биохимия нобель)<br><br>- инженер – Puskás Tivadar Пушка тина на воде. в ней телефонная станция с проводами"</div>
+            <div id="card">"A magyar népzene alapját a magyarok a keletről hozták. Nagy magyar zeneszerzők Bartók Béla és Kodály Zoltán kb. 10 000 dallamot gyűjtettek. A magyar dallamnak egyedi hangzása van.<br>A 18. században olyan magyar tánczenei forma lett népszerú, mint a verbunkos. Ott lassú és gyors szakaszok vannak. Majd a komolyzenében is használták.<br>4 nagy magyar zeneszerző jól ismert világszerte:<br>- Erkel Ferenc (1810-1893), aki Hunyadi László és Bánk bán történeti operát írt, a Himnusz zenejének szerzője.<br>- Liszt Ferenc (1811-1886), nagy romantikus zeneszerzője, legnagyobb zongoraművésze, világszerte ismerik a Magyar rapszódiát, a Koronazási misét.<br>- Bartok Béla (1881-1945), zeneszerző, népzenekutató, híres művei A kékszakállú herceg, a Fából faragott királyfí.<br>- Kodály Zoltán (1882-1967), zeneszerzéő, népzenekutató, a híres művei (Háry János) mellett híres a zeneoktatási módszere is.<br>A magyar operett is világhíres, valamint a 2 világhírű operettkomponista Lehár Ferenc és Kálmán Imre.<br><br>A magyar tudomány sok fontos képviselői közül szeretném megemlíteni a következőket:<br><br>Nyelvészet és őshaza kutatás<br>    Kőrösi Csoma Sándor: a magyar őshaza kutató, a tibeti-angol szótár szerzője.<br><br>Matematika<br>    Bolyai Farkas és Bolyai János: matematikusok; Bolyai János felfedezte az abszolút geometriát.<br>    Neumann János: matematikus, részt vett a digitális számítógép fejlesztésében.<br><br>Fizika    <br>Jedlik Ányos: fizikus, felfedezte a dinamó elvét.<br>    Teller Ede: atomfizikus, részt vett az első atombomba kifejlesztésében.<br>    Krausz Ferenc: fizikus, 2023-ban fizikai Nobel-díjat kapott.<br><br>Orvostudomány és biokémia<br>    Semmelweis Ignác: orvos, a klóros fertőtlenítés / sterilizálás felfedezője, „az anyák megmentője”.<br>    Szent-Györgyi Albert: orvos, biokémikus, a C-vitamin felfedezéséért Nobel-díjat kapott.<br>    Karikó Katalin: orvos, biokémikus, 2023-ban Nobel-díjat kapott.<br><br>Mérnöki tudományok és találmányok<br>    Puskás Tivadar: a vezetékes telefonközpont feltalálója."</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">15B - A közigazgatás szervezeti felépítése, a közigazgatási eljárás<br></div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">"=közigazgatás szervezetek csoportja kormány feladatait végzik. végrehajtói hatalmat,= A közigazgatás .. csoportja, .. funkciója az, hogy az állam .. feladatait végezze<br>=2szinú ügyek: országos (központi) és helyi (önkormányzat), <br>-Kormány, Minisztériumok, hivatalok, (Központi Statisztikai Hivatal, Bevándorlási és Állampolgársági Hivatal). Autonóm Bank, <br>-önkormányzatok – építési, szociális, lakcím, <br><br>=eljárás, ügyfél, hivatal, kezdeményezi, <br>-Hatáskör (полномочия) és illetékesség (компетенцию)"</div>
+            <div id="card">"A közigazgatás az állami szervezetek csoportja, amelynek legfőbb funkciója az, hogy az állam vagy az önkormányzat feladatait végezze<br>(A közigazgatás olyan szervezetek csoportja, amelyek az állam vagy az önkormányzat feladatait végzik és betartatják a törvényeket.)<br><br>A közigazgatási szervek és a Kormány a végrehajtói hatalmat alkotják. <br>2szinú ügyek: országos(központi) és helyi (önkormányzat)<br>Országos ügyekben a központi, helyi ügyekben az önkormányzati közigazgatás jár el. <br><br>Központi szervek:<br>    Kormány: a közigazgatás felső szintje.<br>    Minisztériumok: Jelenleg 14 szakminisztérium működik, pl. Agrárminisztérium, Energiaügyi Minisztérium, Honvédelmi Minisztérium.<br>    Kormányhivatalok és központi hivatalok: például a Központi Statisztikai Hivatal és a Bevándorlási és Állampolgársági Hivatal.<br>    Autonóm szervek: pl. Magyar Nemzeti Bank, függetlenek a Kormánytól.<br><br> A helyi szervei az önkormányzatok:<br>Az önkormányzatok jegyzői döntéseket hoznak pl. építési vagy szociális ügyekben, igazolványokat vagy lakcím kártyát állítanak ki.<br><br>Közigazgatási eljárás:<br>A célja, hogy hivatalos döntéseket hozzon (engedélyezés, tilalom). Az ügyfél vagy hivatal kezdeményezi. Az eljárás kétfokozatú lehet, és jogorvoslatot  .<br>Hatáskör (полномочия) és illetékesség (компетенцию):<br>Egy adott ügyben csak az eljárásra jogosult szerv dönthet. Ha több ilyen szerv van, jogszabály határozza meg az illetékes szervet."</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">16A  -  A magyar ősköltészet és a a korai középkor irodalma<br></div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">"=Rovásírás / ősi írásrendszere / honfoglalás / terjedő / tündérmesék, népdalok, népballadák <br><br>= Rege a csodaszarvasról / Anonymus: Gesta Hungarorum / Képes Krónika<br><br>=István latin  Európa / kódexek / legendak Szent Maria 1300 forditott<br><br>=Tihanyi apátság alapítólevele (1055) / Halotti beszéd és Könyörgés (1180) / Ómagyar Mária siralom<br><br>-&nbsp; Tihanyi apatság alapítólevele 1055<br>- Halotti beszéd és könyörgés (1180) <br>- Ómagyar Mária-siralom (1200)<br>= Gesta Hungarorum, az 1200-as évek eleje<br>- A Szent Margit legendáját 1300<br>= a Képes Krónika, 1358).<br>"</div>
+            <div id="card">"A magyaroknak a honfoglalás előtt is volt írása (rovásírás), de az irodalom ebben az időben szóbeli volt. Szájhagyomány útján terjedtek a lírikus és epikus művek. Ősi költészet nem maradt így írásban, de ez volt a tündérmesék, a népdalak, népballadák bölcsője.<br><br>Rege a csodaszarvasról elmeséli, ahogy Hunor és Magor (Ménrót vezér) egy vadászaton egy csodálatos szarvast követnek, amely elvezeti őket új, termékeny földekre. Hunor és Magor feleségül veszi egy fejedelem két lányát, és tőlük származnak a hunok és a magyarok.<br><br>A honfoglalás és a korai kereszténység időszakáról későbbi művészek meséltek el (Anonymus: Gesta Hungarorum, az 1200-as évek eleje, a Képes Krónika, 1358).<br><br><br>A korai középkorban irodalmi művek többsége latin nyelven volt. Kevesen tudtak írni és olvasni.<br><br>Fontos műfaj legendák voltak (szó szerint: olvasandó). A legendák szentek életéről meséltek, például, Szent István, Szent Gellért, Szent Laszló és Szent Margit legendája. A Szent Margit legendáját 1300-as években fordították le magyarra.<br><br>A legelső magyar nyelvű mű A Tihanyi apatság alapítólevele 1055-ből. Latinul volt, de vannak benne a magyar részek is.<br><br><br>A magyar nyelvű irodalom első teljes szövege a Halotti beszéd és könyörgés (1180). <br>Az 1200-as évek első felében született az első fennmaradt magyar vers, az Ómagyar Mária-siralom<br>"</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">16B - Emberi jogok <br></div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">Голубая ШуБа <br>=Emberi jogok minden embert illetnek … bőrszíntől függetlenül / MO Alaptörvénye biztosítja alapvető jogokat MO élők számára<br>= három csoportra oszthatjuk <br>=1 Szabadságjogok és politikai jogok (VESZ) (LESZ) <br>=2 Gazdasági, szociális, kulturális (MOPEd) <br>=3 globális (FEGy)</div>
+            <div id="card">"Emberi jogok minden embert illetnek meg nemtől, kortól, vallástól, állampolgárságtól, bőrszíntől függetlenül.<br><br>Mindenkinek van például, élethez és emberi méltósághoz való joga, a tulajdonhoz való joga, a szabadsághoz és személyi biztonsághoz való joga. Ugyanakkor mindenkinek vannak különféle személyiségi jogai, például, a gondolat szabadság, a lelkiismereti szabadság és a vallásszabadság joga, a lakóhely szabad megválasztásának joga. <br><br><br>Magyarország Alaptörvénye biztosítja az alapvető jogokat a Magyarországon élők számára. Azt is biztosítja, hogy az alapvető emberi jogok sérthetetlenek. <br><br>Az Alaptörvény szerint, az emberi jogokat tiszteletben kell tartani. Az állam köteles az emberi jogokat védeni.<br><br><br>Az emberi jogokat három csoportra oszthatjuk:<br><br>I – „Szabadságjogok és politikai jogok” - Ezek közül vannak állampolgári jogok és személyi szabadság jogok.<br><br>- (VESZ) Az állampolgári jogokhoz tartozik:<br>-- vallásszabadság lelkiismereti- és,<br>--egyesülési és gyülekezési jog.<br>--szólás- és sajtószabadság,<br><br>- (LESZ) A személyi szabadságjogokhoz tartozik:<br>--lakás sérthetetlensége.<br>--élethez való jog,<br>--szabadsághoz való jog, <br><br>II – „Gazdasági, szociális, kulturális” jogok csoportja: <br>(MOPEd)<br>-munkához való jog,<br>-pihenéshez való jog,<br>-egészséghez és szociális biztonsághoz való jog,<br>-(oktatas) művelődéshez való jog.<br><br>III - Harmadik jogok csoportjaba tartoznak „globális jogok”. <br>Ezeket a jogokat nemzetközi dokumentumok biztosítják például <br>(FEGy)<br><br>-fogyatékosok jogai<br>-egészséges környezethez való jog, <br>-gyermekek jogai, <br>"</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">17A - A reneszánsz és a barokk irodalom, valamint  a felvilágosodás és a klasszicizmus</div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">Голубое СеДло<br><br>ЯНос В панорамных очках, (Черная КоЧерга, Черное СиТо) – ДИкая ЧЕРЕшня, latin, matyas konyvtar<br><br>Балалайка с Бантом, (пятнистая ПеЧь - Пятнистая РуЧка) – кодекс, vitéz <br><br>Одноглазый Микимаус (Шерстяной ДоМ – Шерстяной ЛуЧник) – Szigeti veszedelem eposz, török<br><br>Бешенный доктор в рубашке  (Синей ЧаШка в ней Вишневый ГаГарин) – nyelvújítás, Agis tragédia ”  - Spártában a reformokról<br><br>Шоколадный Мишка (Синий яЗыК - Вишневые оБои) – Konstancinápoly Дороти(сатира полит) szinhaz<br><br>Казлиний Фрак, (Синее Перо - Вишневая КоЖа) – iro, nyelvújítás, finnugor, naplója börtön</div>
+            <div id="card">"Janus Pannonius (1434-1472) – „Pannonia dicsérete” terület ábrázolta, Mátyás király, Vatikan  Könyvtárban.<br><br>Balassi Bálint (1554-1594)  - első magyar nyelven író. „Balassa-kodex”, verseiből fiktív lírai „regényt” állít össze, Fennmaradt színdarabja a „Szép magyar komédia”.<br><br>Zrínyi Miklós (1620-1664) – „Szigeti veszedelem” eposzt írt. Török<br><br>Bessenyi György (1746-1811) – költö, nyelvújítás mozgalom, Magyar Akadémia létrehozását kezdeményezte, „A filozófus”, „Agis tragédia ”  - Spártában a reformokról szól, tragikus, mert a nép ellenállása miatt halt meg a reformokért.<br><br>Csokonai Vitéz Mihály (1773-1805) - Jelentős művei: Konsztantinápoly (szatirikus politikai és társadalomkritika), A reményhez. Színpadi híres műve: Dorottya (szatirikusan ábrázolja férfi és nö között viszonyosát ). <br><br>Kazinczy Ferenc (1759-1831) - Kiadta az első magyar nyelvú folyóiratot (Magyar Museum). Művei: Tövisek és virágok verskötet, Fogságom naplója (saját börtön évekről szól).<br>"</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">17B - Az Alaptörvényben biztosított alapvető jogok</div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">Голубой СоБор = <br><br>= “Szabadság és felelősség” című fejezete / jogok sérthetetlenek / állam köteles védeni<br>1.  Személyi és szabadságjogok<br>2.  Polgári és politikai jogok<br>3.  Társadalmi, gazdasági és kulturális jogok<br>4.  Közösségi és családi jogok<br>5.  Kisebbségi és antidiszkriminációs jogok<br><br>Az állam biztosítja az oktatáshoz való jogot. Az általános iskola kötelező (6–16 év) és ingyenes, kivéve az étkezést, amelyért fizetni kell. A felsőoktatás hozzáférhető, az intézmények autonómok.<br><br>Az Alaptörvény a családot és házasságot védi. 18 éves kortól szabad összeházasodni. Az állam támogat: családi pótlék (amig tanul), gyes (2 év), anyósáig támogatás.<br></div>
+            <div id="card">"A Magyarország Alaptörvénye „Szabadság és felelősség” című fejezete tartalmazza biztosított alapvető jogokat. Az Alaptörvény biztosítja, hogy az alapvető jogok sérthetetlenek. Az Alaptörvény szerint, az  emberi jogokot tiszteletben kell tartani. Az állam köteles az emberi jogokat védeni.<br><br>**1. Személyi és szabadságjogok**  6<br>- Az élethez és az emberi méltósághoz való jog  <br>- A személyes szabadsághoz való jog  <br>- A szabad mozgáshoz való jog  <br>- Az ember jogképessége  <br>- A jó hírnévhez, a magánlakás sérthetetlenségéhez, a magántitok védelméhez való jog  <br>- A személyes adatok védelméhez való jog  <br><br>**2. Polgári és politikai jogok**  10<br>- A tisztességes eljáráshoz való jog  <br>- A lelkiismereti és vallásszabadság  <br>- A véleménynyilvánítás szabadsága  <br>- A sajtószabadság  <br>- A közérdekű adatok megismeréséhez való jog  <br>- A gyülekezési jog  <br>- Az egyesülési jog  <br>- A kérelmezési és panaszjog  <br>- Az állampolgársághoz való jog  <br>- A választójog, a közhivatal viselésének joga  <br><br>**3. Társadalmi, gazdasági és kulturális jogok**  6<br>- A munkához való jog  <br>- A pihenéshez való jog  <br>- A sztrájkjog  <br>- Az egészséghez és a szociális biztonsághoz való jog  <br>- Az oktatáshoz való jog  <br>- A tulajdonjog  <br><br>**4. Közösségi és családi jogok**  3<br>- A család védelme  <br>- A férfiak és nők egyenjogúsága / egyenlősége  <br>- A gyermekek jogai  <br><br>**5. Kisebbségi és antidiszkriminációs jogok**  2<br>- A kisebbségi jogok  <br>- A diszkrimináció tilalma  <br><br>Az oktatáshoz való jog. Az állam biztosítja a művelődéshez való jogot ingyenes és kötelező általános iskolával, valamint hozzáférhető közép- és felsőfokú oktatással. A közoktatás működtetése az állam feladata, minden gyerek 6-16 éves korig tankötelezett. Az oktatás ingyenes, de az étkezésért és külön foglalkozásokért fizetni kell. A felsőoktatási intézmények autonómiával rendelkeznek.<br>A család védelme. Az Alaptörvény védi a családot és a házasságot (18 éves kortól szabad összeházasodni). A szociális biztonság érdekében az állam következő támogatást nyújt a családhoz: családi pótlékot (amíg tanul a gyerek), gyes-t (2 évig), anyasági támogatást.<br>"</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">18A - A magyar irodalom a romantika korában (a romantika, mint stílusirányzat; a korszak kiemelkedő írói és költői)</div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">"Голубое ВеДро = в нем ёж.<br><br>=1820 jelentkezik / Pest-Buda irodalmi középpontja / újságok folyóiratok / Tudományos Akadémia és a Nemzeti Színház / politika és irodalom<br><br>Katona József (1791–1830): /каток через ежа = РоГа оКНо / [író] Bánk bán (В Банке, Andrs2,магнат)<br><br>Kölcsey Ferenc (1790–1838): /колючка фрак = в РюМка КоВёр (ХВост) / [költő] Himnusz<br><br>Vörösmarty Mihály (1800–1855): / кровавый медведь = бочки-пипитр / [költő, író] Szozat<br><br>Petőfi Sándor (1823–1849) / петух-шар = духи-(череп) / [költő] forradalmi, Alföld, Tisza, nemzeti dal <br><br>Arany János (1817–1882): / золотой нос =  ГуСь – ВаТа / [költő, író] Regé a csódaszarvasról, Toldi-trilógia<br>Madách Imre (1823–1864): / mad watch (madar) = ДуХи ЛуЧник / [író] Emberi tragédia (Hegel dialektika, boldsag a belso fejlődésé van)<br><br>Jókai Mór (1825–1904): / ёлка в море =  Топор-Чай / [író] Nagy Magyar Mesemondó  (Сказочник), Arany Ember, köszivú ember.<br><br>Mikszáth Kálmán (1847-1910): / миксер на кальмаре = ЧаСы-оГоНь / [író] Különös házasság, A fekete város<br>"</div>
+            <div id="card">"A romantika, mint irodalmi stílus, az 1820-as években  jelentkezik Magyarországon. Ez nagyon fontos időszak volt a magyar irodalomban, mert akkor Pest-Buda lett az ország irodalmi középpontja és újságok, folyóiratok indultak. Szintén fontos volt, hogy megkezdett működni a Magyar Tudományos Akadémia és a Nemzeti Színház. Ebben a korban különösen  szoros volt a kapcsolat a politika és az irodalom között, így sok híres költő forradalmi, politikai verseket is írt.<br><br>Ember Tragedia - Az ember végül megérti, hogy a boldogság nem a világban, hanem a saját belső fejlődésében keresendő, és hogy a végtelen küzdelem mindig folytatódni fog.<br>"</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">18B -  Az Alaptörvényben szereplő alapvető kötelezettségek</div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">"ФаБрика = вход - пр стена - лв стена. по центру кр книга<br>=Állampolgári / #Szabadság és felelősség# / állampolgar-honvedelme-aranyos<br><br>=Állqmpolgar - szülők gyermekükről gondoskodni / gyermekek rászoruló (szor. szoros) szüleikről gondoskodni / képességének gazdaságban való részvételének / haza védelmére <br><br>=honvédelmi - polgárvédelmi es Katonai szolgálati (18 – 40) <br><br>=Arányos - adót es vámot / nem csak állampolgárok fizet / munkaado vagy maga / személyi, jövedelemadó, általános forgalmi adó, iparűzési, adó, gépjárműadó"</div>
+            <div id="card">"Állampolgári kötelességek<br>Az Alaptörvény „Szabadság és felelősség” című fejezete tartalmazza az alapvető kötelezettségeket (XXX-XXXI., XVI cikk (3)-(4) bekezdés).<br><br>-A szülők kötelesek kiskorú gyermekükről gondoskodni. E kötelezettség magában foglalja gyermekük taníttatását.<br><br>-A nagykorú gyermekek kötelesek rászoruló szüleikről gondoskodni.<br><br>-Teherbíró képességének, illetve a gazdaságban való részvételének (állami feladat) megfelelően mindenki hozzájárul a közös szükségletek fedezéséhez.<br>-Minden magyar állampolgár köteles a haza védelmére.<br><br>A honvédelmi kötelezettség:<br> A hazavédelme Magyarország minden állampolgárának kötelessége.<br> A honvédelmi kötelezettség teljesítésének többféle formája van, például:<br><br>-katonai szolgálati kötelezettség<br>-polgárvédelmi kötelezettségi<br>-honvédelmi munkakötelezettség<br><br> Katonai szolgálati kötelezettség békeidőben – jelenleg - nem terheli az állampolgárokat. A katonai kötelezettség a 18. év betöltésekor kezdődik, és a 40. életév betöltéséig áll fenn.<br><br>Arányos közteherviselés:<br>-Minden természetes személyi, jogi személy és jogi személyiséggel nem rendelkező szervezet köteles jövedelmi és vagyoni viszonyaitól függően, teherbíró képességének, illetve a gazdaságban való részvételének megfelelően a közterhekhez hozzájárulni, az az adót, vámot és illetéket fizetni.<br><br>-A közteherviselésben való részvétel nem az állampolgársághoz kötődik.<br><br>-Az adózási kötelezettségről törvények rendelkeznek, amelyek meghatározzák az adózó, az adóhatóságok jogait és kötelezettségeit, az adózás rendjét az adók fajtáit.<br><br>-Az adóbevallása és megfizetése önadózással történik vagy a munkáltató/kifizető vonja le az adót. Az adóknak számtalan fajtája van, például személyi jövedelemadó, általános forgalmi adó, iparűzési adó, gépjárműadó"</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">19A - A 20. század magyar irodalma</div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">"Ад-море-еж-сад<br><br>=Ady Endre (1877 - 1919) /соска-горя/ leghíresebb költő / alap figurája / költészet felújítója / Újságíróként / Nyigat / 1906 Új versek / irodalom kezdődése / múzája Lédának / háborúellenes - Ember az embertelenségben / szimbolizmus  <br><br>=Móricz Zsigmond (1879-1942) /сыр-щит/ Romanista-Realista / barátja / paraszti falu életét abrazolja / Légy jó mind halálig / Rokonok <br><br>=József Attila (1905-1937) /обои-коса/ költő / Szegény / nehéz volt élete / társadalmi – politikai / világszerte / Levegőt! / A Dunánál <br><br>=Kertész Imre (1929-2016) /дрон-гуаш/ 12év (гитара) táborba / gyári munkás- újságíró- fordító / holokausztról / 1975 (зуб) Sorstalanság / 2002 (яд) Nobel"</div>
+            <div id="card">"-Ady Endre (1877-1919): Az egyik leghíresebb magyar költő. A modern magyar irodalom alap figurája/alakja, költészet felujítója, verseit szinte minden európai nyelvre lefordították. Újságíróként dolgozott, #Nyigat. . 1906-ban jelent meg első kötete *Új versek* címmel. (irodalom kezdődése). Sok időt töltött Párizsban, ahol élt a múzája. A költő őt Lédának nevezte, de az igazi neve Adél volt.<br>A versei következő témakörökkel foglalkoznak:<br><br>Írt vizió tájverseket ( A  magyar Ugaron)<br>Írt szerelmes verseket (Léda versek, Elbocsátó szép üzenet)<br>Írt magyarság-verseket (Nekünk Mohács kell)<br>Írt háborúellenes verseket (Ember az embertelenségben)<br>Írt szimbolizmus, szecesszió stilusban verseket is. (Jó Csond-herceg ellót, harc Nagyurral)<br>  <br>-Móricz Zsigmond (1879-1942): Realista író. Ady barátja volt. A novelláiban és regényeiben  a paraszti életet, a magyar falu életét abrazolja (írja le). A leghíresebb regényei Légy jó mind halálig, Rokonok, Árvácska stb.<br><br>-József Attila (1905-1937): Egyik legnagyobb magyar költő volt. Szegény munkáscsaládban született, apja korán elhagyta a családot, így nagyon nehéz volt a fiú élete. A verseiben az élet nagy kérdéseivel foglalkozott, társadalmi és politikai problémákkal. Ugyanúgy ismerik világszerte, mint Petőfit. (versei: Levegőt!, A Dunánál, Óda stb.)<br><br>-Kertész Imre (1929-2016): Tizenöt eves volt, amikor koncentrációs táborba került. Túlélte, és 2 év múlva hazatért. Volt gyári munkás, újságíró és majd fordító. A munkában a holokausztról írt. 12 év alatt megírta a Sorstalanság című regényt, de csak 1975-ben jelent meg, és 2002-ben  kapta meg a Nobel díját. Egyetlen Nobel-díjas magyar  író volt."</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">19B - A magyar állampolgárság fogalma, keletkezése</div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">Грабли – наколоты хомяк, паспорт, дрпаспорт, два паспорта / ребенок в правой родитель в левой 2 хомяка<br><br>=konkrét állam és ember kötelek <br><br>=nem mindenki aki MOn él Magyar / aki hatályos (érvényes) törvények / Külföldi-Kettős-Hontalan, <br><br>=Léteznek vérségi és területi elvek / Vérség elv – egyik szüló magyar / Területi elv - ha hontalan szülők / talált gyermek</div>
+            <div id="card">"Az állampolgárság egy konkrét állam és egy ember között fennálló jogi kötelék.<br>Nem mindenki, aki Magyarországon él, magyar állampolgár, és nem mindengyik magyar állampolgár belföldön lakik.<br><br>Magyar állampolgár az, aki hatályos törvények (érvényes) alapján szerezte a magyar állampolgárságot. <br>Külföldi állampolgár az, akinek nincs magyar állampolgársaga, de egy másik állam állampolgársága van.<br>Kettős állampolgár az, akinek magyar és másik állam állampolgársága van.<br>Hontalan az, akinek egyetlen állam állampolgársága sincs. De lehet neki letelepedési, bevándorlási engedélye vagy menekült státusza.<br><br>Léteznek vérségi és területi elvek, amelyek alapján születéskor meg lehet szerezni a magyar állampolgárságot.<br><br>Vérség elv – amikor legalább az egyik szüló a magyar állampolgár.<br><br>Területi elv - Például, ha hontalan szülők Magyarországon élnek, és gyermekük itt születik, akkor a gyermek magyar állampolgárságot kap. Ugyanez érvényes azokra a Magyarországon talált gyermekekre is, akiknek szülei ismeretlenek.<br><br><br>"</div>
+        </li>
+    
+        <li>
+            <div id="title_button">
+                <div id="title">20A - Hungarikumok, a himnusz<br></div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">"=«Himnusz», Kölscey Ferenc<br><br>= jellegzetes tárgyak és szokások jellemzőek / latin, <br>=Hortobágyi Nemzeti Park és Hollókő / termál és gyógyvizeink<br><br>A paprika jellegzetes fűszer a magyar konyhában. (Паприка – узнаваемая, отличительная специя венгерской кухни.)<br><br>A paprika használata jellemző a magyar konyhára. (Использование паприки типично для венгерской кухни.)<br>"</div>
+            <div id="card">"Isten, áldd meg a magyart<br>Jó kedvvel, bőséggel, <br>Nyújts feléje védő kart,<br>Ha küzd ellenséggel;<br><br>Balsors akit régen tép, <br>Hozz rá víg esztendőt,<br>Megbünhödte már e nép<br>A multat s jövendőt!<br><br>Hungarikumok azok a jellegzetes tárgyak és szokások, amelyek csak Magyarországra jellemzőek. A „hungarikum” szó a Magyarország latin nevéből, Hungáriából, származik. <br><br>A hungarikom közé tartozik a magyar ételek és füzelek, italok, a magyar állatfajták és kutyafjták. Az is nehany termeszeti kincsünk és helyek.<br><br>A magyar ételek közé tartozik<br>- a gulyásleves<br>- a pörkölt, <br>- a halászlé, <br>- a paprikás csirke, <br>- a rétes és a dobostorta<br><br>Hungarikumok azok is<br>- a makói vöröshagyma, <br>- a kalocsai és szegedi őrölt paprika, <br>- a Pick szalámi, <br>- a libamáj<br>- a fütyülős barackpálinka <br>- az Unicum likőr.<br>- A tokaji aszú bor az UNESCO Világörökség része.<br><br>A magyar állatfajták közé tartozik <br>- a szürkemarha, <br>- a mangalica sertés és <br>- a racka juh. (Рак утюг)<br><br>Magyar kutyafajták (командир пулю в квас)<br>- a puli, <br>- a kuvasz és <br>- a komondor<br>-<br>A Hortobágyi Nemzeti Park és Hollókő, egy falu Észak-Magyarországon a Világörökség része.<br>Természeti kincsünk a Balaton, valamint termál- és gyógyvizeink, például Budapesten és Hévízen.<br>"</div>
+        </li>
+
+
+
+
+        <li>
+            <div id="title_button">
+                <div id="title">20B - A magyar állampolgárság megszerzése, megszűnése és igazolása<br></div>
+                <div id="expand_sum" onclick="toggleSummary(this)">+</div>
+            </div>
+            <div id="sum">
+                МоБила<br><br>
+
+=Honosítással: 8év, tartózkodási, büntetlen, megélhetés és lakóhely biztosított, nyelv, érdekeit nem sérti<br>
+==Kedvezményes 1: 3év + feltételei + 3éve házasságban / kiskorú magyar / fogadta örökbe / menekültként<br>
+==Kedvezményes 2: 5év + feltételei, született + szuletett / kiskorú MO területén<br>
+==Kedvezményes 3: 10év / 5év közös gyermekük, büntetlen, nem sérti, nyelvtudását<br><br>
+
+=visszahonosítást csak volt magyar kérhet, nyelvtudást<br><br>
+
+=Nyilatkozás: <br>
+== 1945 – 1990 között megfosztotta<br>
+== született de nem kap áp szüloktól + 19 éves elótt + 5 év MOban<br>
+==  1957 ellótt ha magyar anya és külföldi apja<br><br>
+
+=Lemondás: új állampolgárság<br><br>
+
+=Visszavonással: Hamis adatok, 10év nem lehet, ktrs elnök dönt<br>
+                <br>
+            </div>
+            <div id="card">
+                A magyar állampolgárságot honosítással, visszahonosítással vagy nyilatkozattal lehet megszerezni. (megszerzés következő feltételei)
+Honosítással az a személy szerezhet magyar állampolgárságot, aki [engedély-lakóhelly-év-vizsga-büntelen-biztonság]
+4. rendelkezik letelepedési vagy bevándorlási engedéllyel,<br>
+5. rendelkezik megélhetéssel és lakóhellyel,<br>
+6. néhány évig él Magyarországon (Ez lehet 8, 5 vagy 3 év, a magyarsághoz való kapcsolattól függően),<br>
+7. alkotmányos alapismeretekből eredményes vizsgát tett,<br>
+8. büntetlen előéletű,<br>
+9. a honosítása Magyarország biztonságát nem sérti.<br>
+A magyar származású személy esetén honosítás, visszahonosítás egyszerűsített eljárással megy. Nekik nem kell megfelelni ezeknek a feltételeknek.<br>
+A vizsga nem kötelező, ha a személy [cseklekvőképtelen-egészség-65-iskola]<br>
+- cselekvőképtelen vagy korlátozottan cselekvőképes,<br>
+- egészsége miatt nem képes vizsgát tenni,<br>
+- 65. évet betöltötte,<br>
+- magyar nyelvű iskolában vagy felsőoktatási intézményben tanult,<br>
+Rendkívüli esetben a köztársasági elnökhöz írt nyilatkozattal lehet megszerezni az állampolgárságot:<br>
+4. ha valakit korábban az állampolgárságától megfosztottak,<br>
+5. ha valakit a második világháború után Németországba áttelepítettek,<br>
+6. ha valaki 1947. szeptember 15. és 1990. május 2. között elbocsátását kérte a magyar állampolgárságtól,<br>
+7. ha valaki magyar állampolgár anyától és külföldi apától született 1957. szeptember 1-je előtt.
+8. ha a gyermek Magyarországon született és másik állam állampolgárságot nem szerezte meg,<br><br>
+
+Az állampolgársági kérelmet magyar nyelven, saját kezűleg aláírva kell benyújtani:<br>
+- a polgármesteri hivatal anyakönyv vezetőjéhez,<br>
+- a Kormányablakhoz,<br>
+- a magyar konzuli tisztviselőhöz,<br>
+- vagy a Bevándorlási és Állampolgársági hivatalhoz.<br>
+A honosítási kérelemről a köztársasági elnök dönt. A honosított személy a magyar állampolgárságot az állampolgársági eskü vagy fogadalom napján szerzi meg.<br>
+A magyar állampolgárságról lemondhat a külföldön lakó magyar állampolgár, ha megkapja a másik állam állampolgárságot.<br>
+Az állampolgárság visszavonható, ha valaki az állampolgárságot a jogszabályok megszegésével kapta meg. 10 év múlva már nem lehet visszavonni az állampolgárságot.
+A magyar állampolgárság érvényes személy igazolvánnyal, útlevéllel, állampolgársági bizonyítvánnyal, honosítási okirattal igazolható
+            </div>
+        </li>
+
+
+
+
+
+
+
+    </ul>
+    <script>
+        function toggleSummary(element) {
+            var sumDiv = element.parentElement.nextElementSibling;
+            if (sumDiv.style.display === "none" || sumDiv.style.display === "") {
+                sumDiv.style.display = "block";
+                element.textContent = "-";
+            } else {
+                sumDiv.style.display = "none";
+                element.textContent = "+";
+            }
+        }
+    </script>
+</body>
+</html>
